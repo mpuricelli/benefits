@@ -7,7 +7,7 @@
 
         button {
            border: none;
-           font-size: 15pt; 
+           font-size: 1.4vw; 
            color: white;
            font-weight:300;
            margin-top: 10px;
@@ -17,7 +17,15 @@
            padding: 6px 10px 6px 10px;
            outline: none;
         }
-
+		
+		h3 {
+			font-size: 1.5vw;
+		}
+		
+		h4 {
+			font-size: 1.3vw;
+		}
+		
         .active, .collapisble:hover {
             background-color: none;
             border: none;
@@ -33,15 +41,17 @@
             text-align: center;
             margin: auto;
             margin-top: 10px;
-            font-size: 12pt;
+            font-size: 1.2vw;
+			line-height: 100%;
         }
+		
     </style>
     <title>Document</title>
 </head>
 <body>
 
     <div id="hkbanner">
-        <img src="hkbanner.png" alt="hkbanner" style="padding: 0; margin: 0; width: 100%;">
+        <img src="images/hkbanner.png" alt="hkbanner" style="padding: 0; margin: 0; width: 100%;">
     </div>
 
     <div id="pagewrapper" style="font-family:Verdana, Geneva, Tahoma, sans-serif; color:#3B3838;">
@@ -49,33 +59,50 @@
             <div id="pagedescription" style="text-align: center">   
 
                 <div id="benefitslogo" style="text-align: center; padding-top: 30px;padding-bottom: 20px;">
-                    <img src="Logo.png" alt="benefitslogo" style="width: 30%">
+                    <img src="images/Logo.png" alt="benefitslogo" style="width: 20%">
                 </div>
 
-                <div id="descriptionwrapper" style="text-align: center; padding-left: 10%;padding-right: 10%;">
-                    <div id="pagedescription" style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12pt; color: #3B3838;">
+                <div id="descriptionwrapper" style="text-align: center; padding-left: 15%;padding-right: 15%;">
+                    <div id="pagedescription" style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 1.2vw; color: #3B3838;">
                         <h3>Welcome to the Ralph Lauren Hong Kong Benefits Page!</h3>
-                        <div id="pagedesciptionsubtitle" style="font-size: 11pt">
+                        <div id="pagedesciptionsubtitle" style="font-size: 1.2vw">
                             <p>We’re constantly striving to offer the best work-life balance to employees and ensure we remain one of the best companies to work for.</p>
                             <p>Find out more about the benefits available to you below.</p>
                         </div>
                     </div>
             </div>
 
-        <div id="contact" style="font-size: 7pt; text-align: center;">
-            <img src="yammer.png" alt="yammer" style="display: inline-block; padding-left: 1%;padding-right: 1%; height: 50px;">
+        <div id="contact" style="font-size: 1vw; text-align: center; margin-bottom: 10px; font-weight: bold;">
+            <img src="images/yammer.png" alt="yammer" style="display: inline-block; padding-left: 1%;padding-right: 1%; height: 50px;">
             <p style="display: inline-block; vertical-align: 20px;">Follow us on Yammer</p>
-            <img src="mail.png" style="display: inline-block; padding-left: 3%; padding-right: 1%; height: 40px; vertical-align: 5px;"><p style="display: inline-block; vertical-align: 20px;">Contact the HK Benefits Team</p>
+            <img src="images/mail.png" style="display: inline-block; padding-left: 3%; padding-right: 1%; height: 40px; vertical-align: 5px;"><p style="display: inline-block; vertical-align: 20px;">Contact the HK Benefits Team</p>
         </div>
 
+		
+		
+		
+		
         <div id="content" style="background-color: #F2F2F2;width: 100%;">
-            <h3 style="padding-top: 40px; color: #0c2340;">SELECT THE TOPIC OF YOUR CHOICE</h3>
+			<div id="FAQButton" style="padding-top: 40px; padding-bottom: 0px; margin-bottom: 0px;">
+				<button style="background-color:#BE9F71; font-size: 1.5vw; font-weight: bold; padding: 15px 20px 15px 20px; margin-bottom:0px;">Check Out Our Life Events FAQ</button>
+			</div>
+			<h4 style="color: #0c2340;">OR</h4>
+            <h3 style="color: #0c2340;">SELECT THE TOPIC OF YOUR CHOICE</h3>
+			
+			<div id="anchormenu" style="font-size: 1.2vw; text-align: center; margin-bottom: 5px;">
+				<p style="display:inline-block">Jump to:</p>
+				<a href="#health" style="text-decoration: none; color:#0c2340; margin: 5px; display:inline-block">Health & Insurance Benefits</a>
+				<a href="#finance" style="text-decoration: none; color:#0c2340; margin: 5px; display:inline-block"">Finance & Pension</a>
+				<a href="#holiday" style="text-decoration: none; color:#0c2340; margin: 5px; display:inline-block"">Holiday & Leave</a>
+				<a href="#wellness" style="text-decoration: none; color:#0c2340; margin: 5px; display:inline-block"">Wellness & Support</a>
+				<a href="#other" style="text-decoration: none; color:#0c2340; margin: 5px; display:inline-block"">Other</a>
+			</div>
            
             <div id="healthbenefits">
-                <img src="healthbenefit.png" alt="healthbenefitimage" style="width: 150px;padding-top: 20px;">
+                <img src="images/healthbenefit.png" alt="healthbenefitimage" style="width: 100px;padding-top: 20px;">
                     
                 <div id="healthbutton" style="text-align: center; padding-top: 10px; padding-bottom: 20px;">
-                        <button type="button" class="collapsible">Health Benefits</button>
+                        <button type="button" class="collapsible"><a id="health"></a>Health & Insurance Benefits</button>
 
                             <div class="content">
                                 <p>As a Ralph Lauren employee you have access to discounted health insurance provided by HCF.</p>
@@ -88,10 +115,10 @@
             </div>
 
             <div id="financepension">
-                <img src="financepension.png" alt="financepensionimage" style="width: 150px;padding-top: 20px;">
+                <img src="images/financepension.png" alt="financepensionimage" style="width: 100px;padding-top: 20px;">
                     
                 <div id="financebutton" style="text-align: center; padding-top: 10px; padding-bottom: 20px;">
-                        <button type="button" class="collapsible">Finance & Pesion</button>
+                        <button type="button" class="collapsible"><a id="finance"></a>Finance & Pension</button>
 
                             <div class="content">
                                 <p>Find out about financial information and your pension.</p>
@@ -102,6 +129,57 @@
                             </div>
                 </div>
             </div>
+			
+			<div id="holidayandleave">
+                <img src="images/holidayleave.png" alt="holidayleaveimage" style="width: 100px;padding-top: 20px;">
+                    
+                <div id="holidayleavebutton" style="text-align: center; padding-top: 10px; padding-bottom: 20px;">
+                        <button type="button" class="collapsible"><a id="holiday"></a>Holiday & Leave</button>
+
+                            <div class="content">
+                                <p>All about holidays & leave.</p>
+                            <h4>Resources</h4>
+                            <p>link</p>
+                            <h4>Useful links</h4>
+                            <p>link</p>
+                            </div>
+                </div>
+            </div>
+			
+			<div id="wellnessandsupport">
+                <img src="images/wellness.png" alt="wellnessandsupport" style="width: 100px;padding-top: 20px;">
+                    
+                <div id="wellnessbutton" style="text-align: center; padding-top: 10px; padding-bottom: 20px;">
+                        <button type="button" class="collapsible"><a id="wellness"></a>Wellness & Support</button>
+
+                            <div class="content">
+                                <p>All about wellness.</p>
+                            <h4>Resources</h4>
+                            <p>link</p>
+                            <h4>Useful links</h4>
+                            <p>link</p>
+                            </div>
+                </div>
+            </div>
+			
+			<div id="other">
+                <img src="images/other.png" alt="other" style="width: 100px;padding-top: 20px;">
+                    
+                <div id="otherbutton" style="text-align: center; padding-top: 10px; padding-bottom: 20px;">
+                        <button type="button" class="collapsible"><a id="other"></a>Other</button>
+
+                            <div class="content">
+                                <p>Other.</p>
+                            <h4>Resources</h4>
+                            <p>link</p>
+                            <h4>Useful links</h4>
+                            <p>link</p>
+                            </div>
+                </div>
+            </div>
+			
+			
+			
         </div>
     </div>
 
