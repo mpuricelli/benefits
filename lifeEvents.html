@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        button {
+           border: none;
+           font-size: 1.4vw; 
+           color: gray;
+           font-weight:bold;
+           margin-top: none;
+           margin-bottom: none;
+           background-color: none;
+           border-radius: 5px;
+           padding: none;
+           outline: none;
+        }
+		
+		h3 {
+			font-size: 1.4vw;
+		}
+		
+		h4 {
+			font-size: 1.2vw;
+		}
+		
+		a {
+			text-decoration: none;
+			padding: 2px;
+			color:#0c2340;
+			font-size:1vw;
+			
+		}
+		
+		a:hover {
+			text-decoration: none;
+			padding: 2px;
+			color:#BE9F71;
+			font-size:1vw;
+			font-weight: bold;
+			
+		}
+		
+        .active, .collapisble:hover {
+            background-color: none;
+            border: none;
+            outline:none;
+			color:#0C2340;		
+        }
+
+        .content {
+            background-color: #ebebeb;
+            padding: 10px 20px 10px 20px;
+            display: none;
+            overflow: hidden;
+            max-width: 80%;
+            text-align: center;
+            margin: auto;
+            margin-top: 10px;
+            font-size: 1.2vw;
+			line-height: 100%;
+        }
+		
+		#pagedescription {
+			font-size: 1.3vw;
+			text-align: center;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			color: #3B3838;
+		}
+		
+		#descriptionwrapper {
+			padding-left: 20%;
+			padding-right: 20%;
+		}
+		
+		#contact {
+				font-size: 1vw;
+				padding-left: 1%;
+				padding-right: 1%; 
+				padding-bottom: 2%;
+				padding-top: 2%;
+				font-weight: bold;
+		}
+		
+		#anchormenu {
+			font-size: 1.2vw; 
+			text-align: center; 
+			margin-bottom: 5px;
+			display:inline-block;
+		}
+		
+		.contacttext {
+			vertical-align: 20px;
+			padding-right: 10px;
+		}
+		
+		#yammerlogo {
+			height: 40px;
+			padding-right: 5px;
+			vertical-align: 5px;
+			
+		}
+		
+		#maillogo {
+			height: 30px;
+			padding-right: 5px;
+			vertical-align: 10px;
+		}
+		
+		@media screen and (max-width: 800px) {
+  			.content {
+   				 	width: 100%;
+				 	font-size: 2vw;
+					line-height: 120%;
+				}
+				h3 {
+					font-size: 2.5vw;
+				}	
+			
+				h4 {
+					font-size: 2vw;
+				}
+			
+				#pagedescription {
+					font-size: 2vw;
+				}
+				
+				#descriptionwrapper {
+					padding-left: 5%;
+					padding-right: 5%;
+				}
+			
+				#contact {
+					font-size: 1.8vw;
+					display: inline-block;
+				}
+		
+				button {
+					font-size: 2.5vw;
+				}
+				
+				#anchormenu {
+					font-size: 2vw;
+				}
+		}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="hkbanner">
+        <img src="images/hklifeevents.png" alt="hkbanner" style="padding: 0; margin: 0; width: 100%;">
+    </div>
+
+    <div id="pagewrapper"">
+
+            <div id="pagedescription" style="text-align: center">   
+
+                <div id="benefitslogo" style="text-align: center; padding-top: 30px;padding-bottom: 20px;">
+                    <img src="images/Logo.png" alt="benefitslogo" style="width: 25%">
+                </div>
+
+                <div id="descriptionwrapper" style="text-align: center;">
+                    <div id="pagedescription">
+                        <h3>Welcome to the Hong Kong Benefits Page!</h3>
+                        <div id="pagedesciptionsubtitle">
+                            <p>We’re constantly striving to offer the best work-life balance to employees and ensure we remain one of the best companies to work for.</p>
+                            <p>Find out more about the benefits available to you below.</p>
+                        </div>
+                    </div>
+           		 </div>
+
+        <div id="contact">
+            <img id="yammerlogo" src="images/yammer.png" style="display: inline-block;" alt="yammer">
+            <p class="contacttext" style="display: inline-block;">Follow us on Yammer</p>
+            <img id="maillogo" src="images/mail.png" style="display: inline-block;" " alt="mail">
+            <p  class="contacttext" style="display: inline-block;">Contact the HK Benefits Team</p>
+        </div>
+
+		
+		
+		
+		
+        <div id="content" style="background-color: #F2F2F2;width: 100%;">
+				
+				<div id="gettingmarried" style="padding-top:20px;">
+				<button id="gettingmarriedbtn" class="collapsible"><h2>- Getting married -</h2></button>
+					
+					<div class="content">
+						<p>test</p>
+					</div>
+					
+				</div>
+				
+				<div id="gettingdivorced">	
+				<button id="gettingdivorcedbtn" class="collapsible"><h2>- Getting divorced -</h2></button>
+					
+					<div class="content">
+						<p>test</p>
+					</div>
+					
+				</div>
+				
+				<div id="havingachild">
+				<button id="havingachildbtn" class="collapsible"><h2>- Having or adopting a child -</h2></button>
+					
+					<div class="content">
+						<p>test</p>
+					</div>
+					
+				</div>
+				
+				<div id="childmajority">
+				<button id="childmajoritybtn" class="collapsible"><h2>- Children turning 19 or 25 -</h2></button>
+					
+					<div class="content">
+						<p>test</p>
+					</div>
+				</div>
+				
+				<div id="personalchange">
+				<button id="personalchangebtn" class="collapsible"><h2>- Changing your personal details -</h2></button>
+					
+					<div class="content">
+						<p>test</p>
+					</div>
+				</div>
+				
+				<div id="illnessdeath">
+				<button id="illnessdeathbtn" class="collapsible"><h2>- Serious illness or death in the family -</h2></button>
+					
+					<div class="content">
+						<p>test</p>
+					</div>
+				</div>
+				
+				
+				<div id="visa">	
+				<button id="visabtn" class="collapsible"><h2>- Visa -</h2></button>
+					
+					<div class="content">
+						<p>test</p>
+					</div>
+				</div>
+					
+				<div id="leavingcompany">	
+				<button id="leavingcompanybtn" class="collapsible"><h2>- Leaving the Company -</h2></button>
+					
+					<div class="content">
+						<p>test</p>
+					</div>
+				</div>
+				
+				<div id="leavinghk">
+				<button id="leavinghkbtn" class="collapsible"><h2>- Leaving Hong Kong -</h2></button>
+					
+					<div class="content">
+						<p>test</p>
+					</div>
+				</div>
+				
+				<div id="employeeassistance" style="padding-bottom:20px;">
+				<button id="employeeassistancebtn" class="collapsible"><h2>- Employee Relief Fund -</h2></button>
+					
+					<div class="content">
+						<p>test</p>
+					</div>
+					
+				</div>
+
+		</div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+</body>
+</html>
