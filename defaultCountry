@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #3B3838;
+	font-size: 1.1vw;
+	line-height: 150%;
+}
+
+h3 {
+	font-size: 1.3vw;
+}
+
+h4 {
+	font-size: 1.2vw;
+}
+
+.collapsible {
+  background-color: #C4C4C4;
+  color: #0C2340;
+  cursor: pointer;
+  padding: 10px;
+  width: 15%;
+  border-radius: 10px;
+  border: none;
+  align-items:center;
+  outline: none;
+  font-size: 15px;
+  display: block;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: #C4C4C4;
+  color:#0c2340;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 20px;
+  max-height: 0;
+  width: 60%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #eaeaea;
+  margin:auto;
+  border-radius: 10px;
+}
+
+.contacttext {
+	font-size: 1vw;
+	margin-right: 30px;
+}
+
+#yammerlogo {
+	vertical-align: -19px;
+	width: 50px;
+}
+
+#maillogo {
+	vertical-align: -10px;
+	width: 30px;
+}
+.icons {
+	display:block ;
+	margin:auto;
+	width: 80px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+#lifeeventbttn {
+	background-color:#BE9F71;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 12px 10px 12px 10px;
+	font-size: 1.2vw;
+	margin-bottom: 20px;
+	width:15%;
+}
+
+#topsection {
+	width: 60%;
+	margin:auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#divider {
+	background-color:#EEF0F2;
+	padding-bottom: 10px;
+}
+
+#bottomsection {
+	background-color:#0c2340;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+</style>
+</head>
+<body>
+
+<div id="hkbanner">
+<img src="images/hkbanner.png" alt="hkbanner" style="padding: 0; margin: 0; width: 80%;">
+</div>
+
+<div id="topsection">
+	
+<img src="images/Logo.png" alt="benefitslogo" style="width: 25%">
+
+<h2>Welcome to the Hong Kong Benefits Page!</h2>
+<p>We are constantly striving to offer the best work-life balance to employees and ensure we remain one of the best companies to work for. Find out more about the benefits available to you below.</p>
+
+<img id="yammerlogo" src="images/yammer.png" style="display: inline-block;" alt="yammer">
+<p class="contacttext" style="display: inline-block;">Follow us on Yammer</p>
+
+<img id="maillogo" src="images/mail.png" style="display: inline-block;" " alt="mail">
+<p  class="contacttext" style="display: inline-block;">Contact the HK Benefits Team</p>
+
+</div>
+
+<div id="divider">
+
+<h2 style="color: #0C2340; padding-top: 40px;">SELECT A TOPIC</h2>
+
+<h3 style="color: #0C2340;">OR</h3>
+
+<button type="button" id="lifeeventbttn">Browse By Life Events</button>
+
+</div>
+
+<div id="bottomsection">
+	
+<img src="images/healthbenefit.png" alt="healthbenefitimage" class="icons">
+
+<button class="collapsible">Health & Benefits</button>
+<div class="content">
+<button class="collapsible">Flexible Benefits</button>
+<div class="content">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+</div>
+
+<img src="images/financepension.png" alt="financepensionimage" class="icons">
+
+<button class="collapsible">Finance & Pension</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<img src="images/holidayleave.png" alt="holidayleaveimage" class="icons">
+
+<button class="collapsible">Holiday & Leave</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<img src="images/wellness.png" alt="wellnessandsupport" class="icons">
+
+<button class="collapsible">Wellness & Support</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<img src="images/handbooksguides.png" alt="handbook" class="icons">
+
+<button class="collapsible">Handbooks & Guides</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<img src="images/other.png" alt="other" class="icons">
+
+<button class="collapsible">Other</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+};
+</script>
+
+</body>
+</html>
+
