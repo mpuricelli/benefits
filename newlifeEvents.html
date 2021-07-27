@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #3B3838;
+	font-size: 1.1vw;
+	line-height: 150%;
+}
+
+h3{
+	font-size: 1.3vw;
+	margin:none;
+}
+
+h4 {
+	font-size: 1.2vw;
+}
+
+h5 {
+	font-size: 1.2vw;
+}
+
+a {
+	color:#377fd9;
+	font-size: 1vw;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#6A706E;
+	font-size: 1vw;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+a:active {
+	color:#3B3838;
+	font-size: 1vw;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+.collapsible {
+  background-color: #C4C4C4;
+  color: #0C2340;
+  padding: 10px;
+  width: 25%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.collapsible2 {
+  background-color: none;
+  color: #0C2340;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.active, .collapsible, .collapsible2:hover {
+  background-color: #C4C4C4;
+  color:#0c2340;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible2:after {
+  content: '\002B';
+  color: #0c2340;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 20px;
+  width: 60%;
+  overflow: hidden;
+  background-color: #eaeaea;
+  margin:auto;
+  border-radius: 10px;
+  display:none;
+}
+
+.content2 {
+  padding: 0 20px;
+  width: 60%;
+  overflow: hidden;
+  background-color: #eaeaea;
+  margin:auto;
+  border-radius: 10px;
+  display:none;
+}
+
+.contacttext {
+	font-size: 1vw;
+	margin-right: 30px;
+}
+
+#benefitslogo {
+	width: 30%
+	
+}
+
+#yammerlogo {
+	vertical-align: -19px;
+	width: 50px;
+}
+
+#maillogo {
+	vertical-align: -10px;
+	width: 30px;
+}
+.icons {
+	display:block ;
+	margin:auto;
+	width: 80px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+#lifeeventbttn {
+	background-color:#BE9F71;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 12px 10px 12px 10px;
+	font-size: 1.2vw;
+	margin-bottom: 20px;
+	width:20%;
+}
+
+#topsection {
+	width: 60%;
+	margin:auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#divider {
+	background-color:#EEF0F2;
+	padding-bottom: 10px;
+}
+
+#bottomsection {
+	background-color:#0c2340;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  			body {
+				text-align: center;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				color: #3B3838;
+				font-size: 2.5vw;
+				line-height: 150%;
+			}
+			
+			h3{
+				font-size: 3vw;
+				margin:none;
+			}
+			
+			h4 {
+				font-size: 2.8vw;
+			}
+			
+			h5 {
+				font-size: 2.8vw;
+			}
+			
+			a {
+				color:#377fd9;
+				font-size: 2.5vw;
+				font-weight:bold;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				color:#6A706E;
+				font-size: 2.5vw;
+				font-weight:bold;
+				text-decoration: none;
+			}
+			
+			a:active {
+				color:#3B3838;
+				font-size: 2.5vw;
+				font-weight:bold;
+				text-decoration: none;
+			}
+			
+			.collapsible {
+			  background-color: #C4C4C4;
+			  color: #0C2340;
+			  padding: 10px;
+			  width: 50%;
+			  border-radius: 10px;
+			  border: none;
+			  outline: none;
+			  font-size: 15px;
+			  margin:auto;
+			  margin-top: 10px;
+			  margin-bottom: 10px;
+			  font-weight: bold;
+			}
+			
+			.collapsible2 {
+			  background-color: none;
+			  color: #0C2340;
+			  padding: 10px;
+			  width: 80%;
+			  border-radius: 10px;
+			  border: none;
+			  outline: none;
+			  font-size: 14px;
+			  margin:auto;
+			  margin-top: 10px;
+			  margin-bottom: 20px;
+			  font-weight: bold;
+			}
+			
+			.active, .collapsible, .collapsible2:hover {
+			  background-color: #C4C4C4;
+			  color:#0c2340;
+			}
+			
+			.collapsible:after {
+			  content: '\002B';
+			  color: white;
+			  font-weight: bold;
+			  float: right;
+			  margin-left: 5px;
+			}
+			
+			.collapsible2:after {
+			  content: '\002B';
+			  color: #0c2340;
+			  font-weight: bold;
+			  margin-left: 5px;
+			}
+			
+			.active:after {
+			  content: "\2212";
+			}
+			
+			.content {
+			  padding: 0 20px;
+			  width: 80%;
+			  overflow: hidden;
+			  background-color: #eaeaea;
+			  margin:auto;
+			  border-radius: 10px;
+			  display:none;
+			}
+			
+			.content2 {
+			  padding: 0 20px;
+			  width: 90%;
+			  overflow: hidden;
+			  background-color: #eaeaea;
+			  margin:auto;
+			  border-radius: 10px;
+			  display:none;
+			}
+			
+			.contacttext {
+				font-size: 2vw;
+				margin-right: 20px;
+			}
+			
+			
+			#benefitslogo {
+			width: 50%
+	
+			}
+			
+			#yammerlogo {
+				vertical-align: -12px;
+				width: 30px;
+			}
+			
+			#maillogo {
+				vertical-align: -7px;
+				width: 20px;
+			}
+			.icons {
+				display:block ;
+				margin:auto;
+				width: 80px;
+				margin-top: 15px;
+				margin-bottom: 5px;
+			}
+			
+			#lifeeventbttn {
+				background-color:#BE9F71;
+				color: white;
+				font-weight: bold;
+				border-radius: 10px;
+				padding: 12px 10px 12px 10px;
+				font-size: 2.7vw;
+				margin-bottom: 20px;
+				width:50%;
+			}
+			
+			#topsection {
+				width: 90%;
+				margin:auto;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			
+			#divider {
+				background-color:#EEF0F2;
+				padding-bottom: 10px;
+			}
+			
+			#bottomsection {
+				background-color:#0c2340;
+				padding-top: 20px;
+				padding-bottom: 50px;
+				}
+}
+	
+				
+
+</style>
+</head>
+<body>
+
+<div id="hkbanner">
+<img src="images/hkbanner.png" alt="hkbanner" style="padding: 0; margin: 0; width: 100%;">
+</div>
+
+<div id="topsection">
+	
+<img src="images/Logo.png" id="benefitslogo" alt="benefitslogo">
+
+<h2>Welcome to the Hong Kong Benefits Page!</h2>
+<p>We are constantly striving to offer the best work-life balance to employees and ensure we remain one of the best companies to work for. Find out more about the benefits available to you below.</p>
+
+<img id="yammerlogo" src="images/yammer.png" style="display: inline-block;" alt="yammer">
+<p class="contacttext" style="display: inline-block;">Follow us on Yammer</p>
+
+<img id="maillogo" src="images/mail.png" style="display: inline-block;" " alt="mail">
+<p  class="contacttext" style="display: inline-block;">Contact the HK Benefits Team</p>
+
+</div>
+
+<div id="divider">
+
+<h3 style="color: #0C2340; padding-top: 40px;">SELECT A TOPIC</h3>
+
+<h4 style="color: #0C2340;">OR</h4>
+
+<button type="button" id="lifeeventbttn">Browse By Life Events</button>
+
+</div>
+
+<div id="bottomsection">
+	
+<img src="images/healthbenefit.png" alt="healthbenefitimage" class="icons">
+
+<button class="collapsible">Health & Benefits</button>
+<div class="content">
+	<button class="collapsible2">Flexible Benefits</button>
+	<div class="content2">
+			<p>Flexible Benefits Scheme is a 'buffet' type of scheme that allows employees to select the level of benefits coverage that suits best of their current life stage.</p>
+			<a>Introduction & User Guide</a>
+			<p>Login to your Flexible Benefits account for details: <a href="https://ralphlauren.cxagroup.com"> CXA Group</a><p/>
+			<h5>Vendor Contacts</h5>
+			<p>CXA Group</p>
+			<p><b>Hotline:</b> +852 3008 0808</p>
+			<p><b>Email:</b><a href="mailto:help.hk@cxagroup.com"> CXA Group Contact</a></p>
+	</div>
+	<button class="collapsible2">Health Insurance</button>
+	<div class="content2">
+			<p><h5>Group Insurance Program</h5></p>
+			<p><a>Office Employees/Store Managers</a></p>
+			<p><a>Store Employees</a></p>
+			<p><h5>Life Insurance</h5></p>
+			<p>Service provider:<b>Manulife (International) Ltd.</b></p>
+			<p><a>Life and Personal Accident Insurance Beneficiary Nomination Form</a></p>
+			<p><h5>Personal Accident Insurance</h5></p>
+			<p>Service provider:<b>Chubb Insurance Company</b></p>
+			<p>Login to your Flexible Benefits account for details.</p>
+			<p><h5>Medical Insurance</h5></p>
+			<p>Service provider:<b>Manulife (International) Ltd.</b></p>
+			<p>Login to submit use e-Card within panel network/submit e-Claims/search the network doctors via Manulife: <a href="http://www.claimsimple.hk/">Claims Portal</a></p>
+			<p></p>
+			<p><a href="">Manulife Medical Insurance Outpatient Claim Form (RL APAC Office Employee)</a></p>
+			<p><a href="">Manulife Medical Insurance Hospitalization Claim Form (RL APAC Office Employee): </a></p>
+			<p><a href="">Manulife Medical Insurance Outpatient Claim Form (RL HK Retail Office and Store Employee)</a></p>
+			<p><a href="">Manulife Medical Insurance Hospitalization Claim Form (RL HK Retail Office and Store Employee)</a></p>
+			<p>Login to your Manulife account for insurance claim advices and details: <a href="http://www.manulife.com.hk">Manulife Portal</a></p>
+			<h5>Vendor Contacts</h5>
+			<p>Manulife (International) Ltd.</p> 
+			<p><b>Hotline:</b> +852 2108 1388</p>
+			<p><b>Fax:</b>+852 2234 5371</p>
+	</div>
+	<button class="collapsible2">Dental Plan</button>
+	<div class="content2">
+			<p>For Senior Directors and below only (Vice President and above: Included in Medical Insurance)</p>
+			<p>Service provider: <b>Quality HealthCare Dental Services Ltd.</b></p>
+			<p><a href="">Plan Details</a></p>
+			<p><a href="">Voluntary Plan for Dependents</a></p>
+			<p><a href="">Enrollment Form for Dependents</a></p>
+	</div>
+	<button class="collapsible2">Health Check Up</button>
+	<div class="content2">
+			<p><h5>Policies:</h5></p>
+			<p><a>Office Employees</a></p>
+			<p><a>Store Employees</a></p>
+			<p>Submit Health Check Up claim under Medical Insurance with Outpatient Claim Form with Flexible Benefits Statement showing Health Check-Up limit selected.</p>
+			<p>Employee can contact their preferred medical clinic and make the appointment directly; or Dr. Vio & Partners, QHMS and HMMP offer health check-up plans to our employees at preferential rates</p>
+			<p><h5>Details</h5></p>
+			<p><a>Dr. Vio & Partners</a></p>
+			<p><a>Quality Healthcare Medical Services (QHMS)</a></p>
+			<p><a>HMMP</a></p>
+	</div>	
+	<button class="collapsible2">Business Travel Insurance</button>
+	<div class="content2">
+			<p>Service Provider: <b>AIG Insurance Hong Kong Limited</b></p>
+			<p><a>Plan Details</a></p>
+			<p><a>Emergency Assistance</a></p>
+			<p><a>Claim Procedure</a></p>
+			<p><a>Claim Form</a></p>
+			<h5>Vendor Contacts</h5>
+			<p>AIG Insurance Hong Kong Limited</p>
+			<p><b>Hotline:</b>+852 3666 7090</p>
+			<p><b>Email:</b><a href="mailto:pa.claim.hk@aig.com"> AIG Claims</a></p>	
+		
+	</div>
+			
+</div>
+
+<img src="images/financepension.png" alt="financepensionimage" class="icons">
+
+<button class="collapsible">Finance & Pension</button>
+<div class="content">
+  <p><h5>MPF</h5></p>
+	<p><a>Mandatory Provident Fund</a></p>
+  <p><h5>Rental Reimbursement Scheme</h5></p>
+	<p><a>Rental Reimbursement Scheme</a></p>
+	<p><a>Rental Reimbursement - Enrolment Form</a></p>
+	<p><a>Rental Reimbursement - Claim Form</a></p>
+	
+  
+</div>
+
+<img src="images/holidayleave.png" alt="holidayleaveimage" class="icons">
+
+<button class="collapsible">Holiday & Leave</button>
+<div class="content">
+  <p>Time Off is provided for the purpose of rest, recreation and a break from the workplace or to attend to personal and family affairs.</p>
+	<p><a href="">Annual Leave</a></p>
+	<p><b>Sick Leave</b></p>
+	<p><b>Maternity Leave</b></p>
+	<p><b>Paternity Leave</b></p>
+	<p><a href="">Family Leave</a></p>
+	<p><b>Marriage Leave</b></p>
+	<p><b>Compassionate Leave</b></p>
+	<p><b>Compensation Leave</b></p>
+	<p><b>Jury Duty & Witness Duty Leave</b></p>
+	<p><b>Summer Fridays</b></p>
+	<p><b>RL Personal Days</b></p>
+	<p><b>Birthday Leave</b></p>
+	<p><a href="">Sabbatical Leave</a></p>
+	<p><b>Public Holidays</b></p>
+	<p><a href="">View Employee Handbook</a></p>
+  <p><h5>Useful Links</h5></p>
+  <p><a href="">Workday</a></p>
+  <p><a href="">WFM</a></p>
+  <p><h5>Contacts</h5></p>
+  <p>Irene Tam</p>
+  <p>Ph:<b> +852 3980 4735</b></p>
+  <p><a href="mailto:CandB@RalphLauren.com">CandB@RalphLauren.com</a></p>
+</div>
+
+<img src="images/wellness.png" alt="wellnessandsupport" class="icons">
+
+<button class="collapsible">Wellness & Support</button>
+<div class="content">
+  <p>Ralph Lauren provides you with:</p>
+  <p><h5>Adoption Assistance</h5></p>
+  <p>The Adoption Assistance is provided for qualifying adoption expenses up to USD10,000 per adoption with a limit of USD20,000 per employee during employment period.</p>
+  <p><a href="">Adoption Assitance Policy</a></p>
+  <p><h5>Congratulations & Condolences Allowances</h5></p>
+  <p>You will receive company gifts on the following special occasions:</p>
+  <p>Marriage: a marriage gift of HK$1,000 for an employee's first legal marriage</p>
+  <p>Birth of Child:a birth gift of HK$800 for an employee's new born baby</p>
+  <p>Illness: at Business/Department manager's discretion, a get-well gift (i.e. a bouquet of flowers or fruit basket) of HK$500 may be sent if an employee or their spouse or children is hospitalized</p>
+  <p>Bereavement: at Business/Department manager's discretion, a condolence wreath of HK$1,000 and token of HK$1,000 may be sent in the event of the death of an employee's immediate family member (i.e. parents, spouse, child, parents-in-law, brother, sister, and grandparents.)</p>
+  <p><a href="">View Policy</a></p>
+  <p><h5>Employee Assistance Program</h5></p>
+  <p>The EAP provides you and immediate family members with immediate and confidential help for any work, health or life concern, anytime and anywhere.</p>
+  <p><a href="http://www.workhealthlife.com/global">EAP Vendor Website</a></p>
+  <p><h5>RL Well-Being Exchange</h5></p>
+  <p>You get a chance to take part or lead of a well-being class</p>
+  <p><a href="https://rltoday.ralphlauren.com/Pages/2019_04_April/0401_Wellness_RLWellBeingExchange.aspx">Well Being Exchange Policy</a></p>
+  <p><h5>Vendor Discounts</h5></p>
+  <p>You can enjoy purchasing products and services at discounted rate or with added value.</p>
+  <p><a href="https://rltoday.ralphlauren.com/career/Benefits/Pages/APAC/HongKong_VendorDiscount.aspx">View List of Vendors</a></p>
+  <p><h5>Festival Celebrations</h5></p>
+  <p>Every year you will receive the following to share the festive joy:</p>
+  <p><b>Chinese New Year Red Packet</b></p>
+  <p><b>Mid-Autumn Festival Moon Cakes</b></p>
+</div>
+
+<img src="images/handbooksguides.png" alt="handbook" class="icons">
+
+<button class="collapsible">Handbooks & Guides</button>
+<div class="content">
+  <p><h5>HK Employee Handbook</h5></p>
+  <p><a href="">Handbook</a></p>
+  <p><h5>Knowing Your Benefits</h5></p>
+   <p><a href="">Knowing Your Benefits - Office</a></p>
+   <p><a href="">Knowing Your Benefits - Store</a></p>
+   
+</div>
+
+<img src="images/other.png" alt="other" class="icons">
+
+<button class="collapsible">Other</button>
+<div class="content">
+  <p><h5>Employee Shopping Discount</h5></p>
+  <p>You can purchase the Company's wide range of products with a generous discount according to the policy in your region</p>
+  <p><a href="https://rltoday.ralphlauren.com/career/SalesandDiscounts/Pages/APAC.aspx">Learn more</a></p>
+  <p><h5>Legacy Awards</h5></p>
+  <p>RL presents Legacy Awards to recognize employees who have dedicated 10, 15, 20, 25, 30, 35 years of service to the Company.</p>
+  <p><a href="https://rltoday.ralphlauren.com/community/LegacyAwards2016/Pages/Legacy2019.aspx">Learn more</a></p>
+  <p><h5>Employee Referral Bonus Program</h5></p>
+  <p> Ralph Lauren values talented individuals who are interested in a new and challenging opportunity. The dedicated skills and talents of our employees are key factors that make Ralph Lauren a dynamic company. The Company will pay a one-time incentive for all referrals which result in a successful hire.</p>
+  <p><a href="https://rltoday.ralphlauren.com/career/Pages/Jobs_GlobalEmployeeReferral.aspx">Learn more</a></p>
+</div>
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content2 = this.nextElementSibling;
+    if (content2.style.display === "block") {
+      content2.style.display = "none";
+    } else {
+      content2.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
+
