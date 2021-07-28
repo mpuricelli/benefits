@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #3B3838;
+	font-size: 1.1vw;
+	line-height: 150%;
+}
+
+h3{
+	font-size: 1.3vw;
+	margin:none;
+}
+
+h4 {
+	font-size: 1.2vw;
+}
+
+h5 {
+	font-size: 1.2vw;
+}
+
+a {
+	color:#377fd9;
+	font-size: 1vw;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#6A706E;
+	font-size: 1vw;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+a:active {
+	color:#3B3838;
+	font-size: 1vw;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+.collapsible {
+  background-color: #C4C4C4;
+  color: #0C2340;
+  padding: 10px;
+  width: 25%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.collapsible2 {
+  background-color: none;
+  color: #0C2340;
+  padding: 10px;
+  width: 70%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.active, .collapsible, .collapsible2:hover {
+  background-color: #C4C4C4;
+  color:#0c2340;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible2:after {
+  content: '\002B';
+  color: #0c2340;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 20px;
+  width: 80%;
+  overflow: hidden;
+  background-color: #eaeaea;
+  margin:auto;
+  border-radius: 10px;
+  display:none;
+}
+
+.content2 {
+  padding: 0 20px;
+  width: 80%;
+  overflow: hidden;
+  font-size: 15px;
+  background-color: #eaeaea;
+  margin:auto;
+  border-radius: 10px;
+  display:none;
+}
+
+.contacttext {
+	font-size: 1vw;
+	margin-right: 30px;
+}
+
+#benefitslogo {
+	width: 30%
+	
+}
+
+#yammerlogo {
+	vertical-align: -19px;
+	width: 50px;
+}
+
+#maillogo {
+	vertical-align: -10px;
+	width: 30px;
+}
+.icons {
+	display:block ;
+	margin:auto;
+	width: 80px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+#lifeeventbttn {
+	background-color:#BE9F71;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 12px 10px 12px 10px;
+	font-size: 1.2vw;
+	margin-bottom: 20px;
+	width:20%;
+}
+
+#topsection {
+	width: 60%;
+	margin:auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#divider {
+	background-color:#EEF0F2;
+	padding-bottom: 10px;
+}
+
+#bottomsection {
+	background-color:#0c2340;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  			body {
+				text-align: center;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				color: #3B3838;
+				font-size: 2.5vw;
+				line-height: 150%;
+			}
+			
+			h3{
+				font-size: 3vw;
+				margin:none;
+			}
+			
+			h4 {
+				font-size: 2.8vw;
+			}
+			
+			h5 {
+				font-size: 2.8vw;
+			}
+			
+			a {
+				color:#377fd9;
+				font-size: 2.5vw;
+				font-weight:bold;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				color:#6A706E;
+				font-size: 2.5vw;
+				font-weight:bold;
+				text-decoration: none;
+			}
+			
+			a:active {
+				color:#3B3838;
+				font-size: 2.5vw;
+				font-weight:bold;
+				text-decoration: none;
+			}
+			
+			.collapsible {
+			  background-color: #C4C4C4;
+			  color: #0C2340;
+			  padding: 10px;
+			  width: 50%;
+			  border-radius: 10px;
+			  border: none;
+			  outline: none;
+			  font-size: 15px;
+			  margin:auto;
+			  margin-top: 10px;
+			  margin-bottom: 10px;
+			  font-weight: bold;
+			}
+			
+			.collapsible2 {
+			  background-color: none;
+			  color: #0C2340;
+			  padding: 10px;
+			  width: 100%;
+			  border-radius: 10px;
+			  border: none;
+			  outline: none;
+			  font-size: 14px;
+			  margin:auto;
+			  margin-top: 10px;
+			  margin-bottom: 20px;
+			  font-weight: bold;
+			}
+			
+			.active, .collapsible, .collapsible2:hover {
+			  background-color: #C4C4C4;
+			  color:#0c2340;
+			}
+			
+			.collapsible:after {
+			  content: '\002B';
+			  color: white;
+			  font-weight: bold;
+			  float: right;
+			  margin-left: 5px;
+			}
+			
+			.collapsible2:after {
+			  content: '\002B';
+			  color: #0c2340;
+			  font-weight: bold;
+			  margin-left: 5px;
+			}
+			
+			.active:after {
+			  content: "\2212";
+			}
+			
+			.content {
+			  padding: 0 20px;
+			  width: 90%;
+			  overflow: hidden;
+			  background-color: #eaeaea;
+			  margin:auto;
+			  border-radius: 10px;
+			  display:none;
+			}
+			
+			.content2 {
+			  padding: 0 20px;
+			  width: 90%;
+			  overflow: hidden;
+			  background-color: #eaeaea;
+			  margin:auto;
+			  border-radius: 10px;
+			  display:none;
+			}
+			
+			.contacttext {
+				font-size: 2vw;
+				margin-right: 20px;
+			}
+			
+			
+			#benefitslogo {
+			width: 50%
+	
+			}
+			
+			#yammerlogo {
+				vertical-align: -12px;
+				width: 30px;
+			}
+			
+			#maillogo {
+				vertical-align: -7px;
+				width: 20px;
+			}
+			.icons {
+				display:block ;
+				margin:auto;
+				width: 80px;
+				margin-top: 15px;
+				margin-bottom: 5px;
+			}
+			
+			#lifeeventbttn {
+				background-color:#BE9F71;
+				color: white;
+				font-weight: bold;
+				border-radius: 10px;
+				padding: 12px 10px 12px 10px;
+				font-size: 2.7vw;
+				margin-bottom: 20px;
+				width:50%;
+			}
+			
+			#topsection {
+				width: 90%;
+				margin:auto;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			
+			#divider {
+				background-color:#EEF0F2;
+				padding-bottom: 10px;
+			}
+			
+			#bottomsection {
+				background-color:#0c2340;
+				padding-top: 20px;
+				padding-bottom: 50px;
+				}
+}
+	
+				
+
+</style>
+</head>
+<body>
+
+<div id="hkbanner">
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/hklifeeventsbanner.png" alt="hkbanner" style="padding: 0; margin: 0; width: 100%;">
+</div>
+
+<div id="topsection">
+	
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/Logo.png" id="benefitslogo" alt="benefitslogo">
+
+<h2>Hong Kong Benefits - Life Events</h2>
+<p>Life can be crazy sometimes!</p>
+<p> At Ralph Lauren, we're committed in supporting you through the various stages of your personal life.</p>
+<p>This page is designed to help you navigate the various adminstrative requirements when your personal circumstances change.</p>
+<p>Your P&D Business Partner is available for any additional help you may need.</p>
+
+<img id="yammerlogo" src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/yammer.png" style="display: inline-block;" alt="yammer">
+<p class="contacttext" style="display: inline-block;">Follow us on Yammer</p>
+
+<img id="maillogo" src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/mail.png" style="display: inline-block;" " alt="mail">
+<p  class="contacttext" style="display: inline-block;">Contact the HK Benefits Team</p>
+
+</div>
+
+<div id="divider">
+
+<h3 style="color: #0C2340; padding-top: 40px;">SELECT A LIFE EVENT</h3>
+
+<h4 style="color: #0C2340;">OR</h4>
+
+<button type="button" id="lifeeventbttn" onclick="location = 'https://rltoday.ralphlauren.com/career/Benefits/Pages/APAC/APACBenefitsHK.aspx'">Browse By Topic</button>
+
+</div>
+
+<div id="bottomsection">
+	
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/marriage.png" alt="marriage" class="icons">
+
+<button class="collapsible">Marriage</button>
+<div class="content">
+	<button class="collapsible2">Can I take my leave before the marriage date?</button>
+	<div class="content2">
+			<p>Yes. Upon completion of the probationary period, full-time permanent and 1 year or above contract employees are entitled to marriage leave of 3 working days on their first legal marriage. Marriage leave can only be taken once during an employee's employment with Ralph Lauren.</p>
+			<p>The marriage leave must be taken within 6 months of the official marriage registration date and the application must be supported by a copy of the marriage certificate.</p>
+	</div>
+	<button class="collapsible2">What documents do I need to provide if I got married in another country?</button>
+	<div class="content2">
+			<p>Within 3 months (i.e. 90 days) from marriage date, you have to update marital status <b>(Personal -> Personal Information -> Edit)</b> and dependent's information <b>(Actions -> View Dependents -> Add)</b> in Workday. Please also provide a copy of the foreign legal documents and the dependent's passport for verification.</p>
+	</div>
+	<button class="collapsible2">When can I enroll my spouse or partner into Ralph Lauren's medical & life insurance plans?</button>
+	<div class="content2">
+			<p>Within 3 months (i.e. 90 days) from the marriage date, you have to update your marital status <b>(Personal -> Personal Information -> Edit)</b> and spouse's (or partner's) information <b>(Actions -> View Dependents -> Add)</b> in Workday.  Please also provide a copy of the legal marriage certificate and spouse's (or partner's) HKID copy for verification.  Please provide a passport copy if your spouse or partner does not have an HKID.  After that, you will receive an email from our vendor CXA in order to select the plan of your choice. Complete the selection and process within the given deadline. Manulife will then be able to issue the medical card for your spouse or partner. It usually takes about two weeks for a new card to arrive.</p>
+	</div>
+	<button class="collapsible2">How do I change my Life Insurance beneficiary?</button>
+	<div class="content2">
+			<p>If you wish to change your Life Insurance's beneficiary, please return the <a href="https://rltoday.ralphlauren.com/career/Benefits/Documents/APAC/Hong%20Kong/Life%20and%20Personal%20Accident%20Insurance%20Beneficiary%20Nomination%20Form.pdf">Beneficiary Nomination Form</a> to your P&D Business Partner.  You should also update the beneficiary's information in Workday.</p>
+	</div>
+			
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/Divorce.png" alt="divorce" class="icons">
+
+<button class="collapsible">Divorce or Separation</button>
+<div class="content">
+	<button class="collapsible2">How can I change or removing a dependent?</button>
+	<div class="content2">
+		<p>Please inform your P&D Partner of the change. In Workday, update your marital status <b>(Personal -> Personal Information -> Edit)</b> and delete the dependent's information <b>(Actions -> View Dependents -> Delete)</b>. After that, CXA will prorate the flex dollars balance and Manulife will terminate your spouse's (or partner's) medical insurance coverage</p>
+	</div>
+	
+	<button class="collapsible2">How can I remove or change my Life Insurance beneficiary?</button>
+	<div class="content2">
+		<p>If you wish to remove or change your Life Insurance's beneficiary, please return the <a href="https://rltoday.ralphlauren.com/career/Benefits/Documents/APAC/Hong%20Kong/Life%20and%20Personal%20Accident%20Insurance%20Beneficiary%20Nomination%20Form.pdf">Beneficiary Nomination Form</a> to your P&D Business Partner.  You should also update the beneficiary's information in Workday.</p>
+	</div>
+</div>	
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/baby.png" alt="baby" class="icons">
+
+<button class="collapsible">Children: Newborn</button>
+<div class="content">
+	<p>Lorem ipsum</p>
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/adoption.png" alt="adoption" class="icons">
+
+<button class="collapsible">Adoption</button>
+<div class="content">
+  <p>Lorem ipsum</p>
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/paperwork.png" alt="paperwork" class="icons">
+
+<button class="collapsible">Updating Personal Information</button>
+<div class="content">
+	<p>Lorem ipsum</p>
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/sickdeath.png" alt="illness" class="icons">
+
+<button class="collapsible">Illness or death of a relative</button>
+<div class="content">
+  <p>Lorem ipsum</p>
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/financialaid.png" alt="financialaid" class="icons">
+
+<button class="collapsible">Financial Aid</button>
+<div class="content">
+  <p>Lorem ipsum</p>
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/leavingcompany.png" alt="leaving" class="icons">
+
+<button class="collapsible">Leaving the company</button>
+<div class="content">
+  <p>Lorem ipsum</p>
+</div>
+
+</div>
+
+<script type="text/javascript">
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content2 = this.nextElementSibling;
+    if (content2.style.display === "block") {
+      content2.style.display = "none";
+    } else {
+      content2.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
+
