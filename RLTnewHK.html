@@ -40,23 +40,21 @@ h5 {
     font-weight: 500!important;
 }
 
-a {
+a:not(.contacttext) {
 	color:#377fd9!important;
-	font-size: 0.9vw!important;
+	font-size:1vw!important;
 	font-weight:500!important;
 	text-decoration: none;
 }
 
 a:hover {
 	color:#6A706E;
-	font-size: 0.9vw!important;
 	font-weight:700!important;
 	text-decoration: none;
 }
 
 a:active {
 	color:#3B3838;
-	font-size: 0.9vw!important;
 	font-weight:700!important;
 	text-decoration: none;
 }
@@ -142,9 +140,12 @@ a:active {
 }
 
 .contacttext {
-	font-size: 0.7vw!important;
-	margin-right: 30px;
+	font-size: 0.8vw!important;
+	margin-right: 15px;
 	font-weight:600!important;
+	text-decoration: none;
+	color:#377fd9!important;
+	display: inline-block!important;
 }
 
 #benefitslogo {
@@ -152,6 +153,10 @@ a:active {
 	margin-bottom: 20px;
 	
 }
+
+#mobilebreak {
+				display: none;
+			}
 
 #yammerlogo {
 	vertical-align: -19px;
@@ -184,11 +189,16 @@ a:active {
 }
 
 #topsection {
-	width: 60%;
+	width: 70%;
 	margin:auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+
+#contact {
+	padding-top:20px;
+	padding-bottom: 10px;
+			}
 
 #divider {
 	background-color:#EEF0F2;
@@ -209,6 +219,7 @@ a:active {
 				font-size: 2.7vw!important;
 				line-height: 150%!important;
 			}
+			
 			p{
 				line-height: 150%!important;
 				font-size: 2.7vw!important;
@@ -251,7 +262,7 @@ a:active {
 			}
 
 			
-			a {
+			a:not(.contacttext) {
 				color:#377fd9!important;
 				font-size: 3vw!important;
 				font-weight:600!important;
@@ -263,14 +274,12 @@ a:active {
 			
 			a:hover {
 				color:#6A706E!important;
-				font-size: 3vw!important;
 				font-weight:700!important;
 				text-decoration: none;
 			}
 			
 			a:active {
 				color:#3B3838!important;
-				font-size: 3vw!important;
 				font-weight:700!important;
 				text-decoration: none;
 			}
@@ -298,7 +307,7 @@ a:active {
 			  border-radius: 10px;
 			  border: none;
 			  outline: none;
-			  font-size: 3.4vw!important;
+			  font-size: 3.2vw!important;
 			  margin:auto;
 			  margin-top: 10px;
 			  margin-bottom: 20px;
@@ -350,16 +359,22 @@ a:active {
 			}
 			
 			.contacttext {
-				font-size: 2vw!important;
-				margin-right: 20px;
+				font-size: 2.1vw!important;
+				margin-right: 10px;
 				font-weight:500!important;
+				text-decoration: none;
+				color:#377fd9!important;
+				display: inline-block!important;
 			}
-			
 			
 			#benefitslogo {
 			width: 40%;
 			margin-bottom: 20px;
 	
+			}
+			
+			#mobilebreak {
+				display: inherit;
 			}
 			
 			#yammerlogo {
@@ -398,6 +413,11 @@ a:active {
 				padding-bottom: 20px;
 			}
 			
+			#contact {
+				padding-top:10px;
+				padding-bottom: 10px;
+			}
+			
 			#divider {
 				background-color:#EEF0F2;
 				padding-bottom: 10px;
@@ -434,12 +454,17 @@ a:active {
 <h2>Welcome to the Hong Kong<br>Benefits Page!</h2>
 <p>We are constantly striving to offer the best work-life balance to employees and ensure we remain one of the best companies to work for. Find out more about the benefits available to you below.</p>
 
+<div id="contact">
+
 <img id="yammerlogo" src="/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/yammer.png" alt="yammer" style="display: inline-block;"/>
-<p class="contacttext" style="display: inline-block;"><a href="">Follow us on Yammer</p>
+<a href=""class="contacttext">Follow us on Yammer</a>
+	
+<br id="mobilebreak">
 
 <img id="maillogo" src="/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/mail.png" alt="mail" style="display: inline-block;"/>
-<p class="contacttext" style="display: inline-block;"><a href="mailto:CandB@RalphLauren.com">Contact the HK Benefits Team</a></p>
+<a href="mailto:CandB@RalphLauren.com" class="contacttext">Contact the HK Benefits Team</a>
 
+</div>
 </div>
 
 <div id="divider">
