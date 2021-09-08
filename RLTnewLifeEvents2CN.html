@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"> 
+<style>
+
+main {
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+	color: #3B3838!important;
+	font-size: 1.2vw!important;
+	line-height: 150%!important;
+}
+
+h2{
+	font-size: 1.4vw!important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+	margin:none;
+	font-weight:bold!important;
+}
+
+h3{
+	font-size: 1.3vw!important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+	margin:none;
+    font-weight:600!important;
+}
+
+h4 {
+	font-size: 1.2vw!important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    margin-bottom:20px!important;
+}
+
+h5 {
+	font-size: 1.2vw!important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    margin-top:20px!important;
+    margin-bottom:20px!important;
+    font-weight: 500!important;
+}
+
+a:not(.contacttext) {
+	color:#377fd9!important;
+	font-weight:500!important;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#6A706E;
+	font-weight:700!important;
+	text-decoration: none;
+}
+
+a:active {
+	color:#3B3838;
+	font-weight:700!important;
+	text-decoration: none;
+}
+
+.collapsible {
+  background-color: #C4C4C4;
+  color: #0C2340;
+  padding: 10px;
+  width: 40%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1vw!important;
+}
+
+.collapsible2 {
+  background-color: #eaeaea;
+  color: #0C2340;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1vw!important;
+}
+
+.active, .collapsible, .collapsible2:hover {
+  background-color: #C4C4C4;
+  color:#0c2340;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible2:after {
+  content: '\002B';
+  color: #0c2340;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding-top: 20px!important;
+  padding-bottom: 20px!important;
+  padding-left: 20px!important;
+  padding-right:20px!important; 
+  width: 70%;
+  overflow: hidden;
+  background-color: #eaeaea;
+  margin:auto;
+  border-radius: 10px;
+  display:none;
+}
+
+.content2 {
+  padding-top: 20px!important;
+  padding-bottom: 20px!important;
+  padding-left: 20px!important;
+  padding-right:20px!important; 
+  width: 90%;
+  overflow: hidden;
+  background-color: #eaeaea;
+  margin:auto;
+  border-radius: 10px;
+  display:none;
+}
+
+.contacttext {
+	font-size: 0.7vw!important;
+	margin-right: 30px;
+	font-weight:600!important;
+	text-decoration: none;
+	display: inline-block!important;
+	color:#377fd9!important;
+}
+
+#benefitslogo {
+	width: 40%;
+	margin-bottom: 20px;
+	
+}
+
+#language {
+	margin-top:0px;
+	margin-bottom: 100px;
+	margin-right:40px;
+	padding: 10px;
+	background-color:#0c2340;
+	border-radius: 0px;
+	color: white;
+	border: none;
+	float:right;
+	font-style: bold;
+}
+
+#mobilebreak {
+				display: none;
+			}
+
+#yammerlogo {
+	vertical-align: -19px;
+	width: 50px;
+}
+
+#maillogo {
+	vertical-align: -10px;
+	width: 30px;
+}
+.icons {
+	display:block ;
+	margin:auto;
+	width: 80px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+#lifeeventbttn {
+	background-color:#BE9F71;
+	color: white;
+	font-weight: 600;
+	border-radius: 10px;
+	padding: 12px 10px 12px 10px;
+	font-size: 1vw!important;
+	margin-bottom: 20px;
+	width:30%;
+	border: none;
+	outline: none;
+}
+
+#topsection {
+	width: 70%;
+	margin:auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#contact {
+	padding-top:20px;
+	padding-bottom: 10px;
+}
+
+#divider {
+	background-color:#EEF0F2;
+	padding-bottom: 10px;
+}
+
+#bottomsection {
+	background-color:#0c2340;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  			main {
+				text-align: center;
+				font-family: Verdana, Geneva, Tahoma, sans-serif!important;
+				color: #3B3838;
+				font-size: 2.7vw!important;
+				line-height: 150%!important;
+			}
+			p{
+				line-height: 150%!important;
+				font-size: 2.7vw!important;
+
+			}
+
+			b{
+				font-weight:700!important;
+				font-size:2.7vw!important;
+			}
+
+			
+			h2{
+				font-size: 3.5vw!important;
+				font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+				margin:none;
+				font-weight:bold!important;
+				line-height: 150%!important;
+            }
+			
+			h3{
+				font-size: 3vw!important;
+				font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+				margin:none;
+				font-weight:600!important;
+			}
+
+			h4 {
+				font-size: 2.8vw!important;
+				font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+				margin-bottom:20px!important;
+			}
+
+			h5 {
+				font-size: 3vw!important;
+				font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+				margin-top:15px!important;
+				margin-bottom:15px!important;
+				font-weight:700!important;
+			}
+
+			
+			a: not(.contacttext) {
+				color:#377fd9!important;
+				font-weight:600!important;
+				text-decoration: none;
+				margin-top:2px!important;
+				margin-bottom:2px!important;
+			}
+			
+			a:hover {
+				color:#6A706E!important;
+				font-weight:700!important;
+				text-decoration: none;
+			}
+			
+			a:active {
+				color:#3B3838!important;
+				font-weight:700!important;
+				text-decoration: none;
+			}
+			
+			.collapsible {
+			  background-color: #C4C4C4;
+			  color: #0C2340;
+			  padding: 10px;
+			  width: 60%;
+			  border-radius: 10px;
+			  border: none;
+			  outline: none;
+			  font-size: 3.6vw!important;
+			  margin:auto;
+			  margin-top: 10px;
+			  margin-bottom: 10px;
+			  font-weight: 700!important;
+			}
+			
+			.collapsible2 {
+			  background-color: #eaeaea;
+			  color: #0C2340;
+			  padding: 10px;
+			  width: 80%;
+			  border-radius: 10px;
+			  border: none;
+			  outline: none;
+			  font-size: 3.2vw!important;
+			  margin:auto;
+			  margin-top: 10px;
+			  margin-bottom: 20px;
+			  font-weight: 700!important;
+			}
+			
+			.active, .collapsible, .collapsible2:hover {
+			  background-color: #C4C4C4;
+			  color:#0c2340;
+			}
+			
+			.collapsible:after {
+			  content: '\002B';
+			  color: white;
+			  font-weight: bold;
+			  float: right;
+			  margin-left: 5px;
+			}
+			
+			.collapsible2:after {
+			  content: '\002B';
+			  color: #0c2340;
+			  font-weight: bold;
+			  margin-left: 5px;
+			}
+			
+			.active:after {
+			  content: "\2212";
+			}
+			
+			.content {
+			  padding: 0 20px;
+			  width: 90%!important;
+			  overflow: hidden;
+			  background-color: #eaeaea;
+			  margin:auto;
+			  border-radius: 10px;
+			  display:none;
+			}
+			
+			.content2 {
+			  padding: 0 20px;
+			  width: 90%!important;
+			  overflow: hidden;
+			  background-color: #eaeaea;
+			  margin:auto;
+			  border-radius: 10px;
+			  display:none;
+			}
+			
+			.contacttext {
+				font-size: 2vw!important;
+				margin-right: 20px;
+				font-weight:500!important;
+				display: inline-block!important;
+				color:#377fd9!important;
+				text-decoration: none;
+			}
+			
+			
+			#benefitslogo {
+			width: 40%;
+			margin-bottom: 20px;
+	
+			}
+			
+			#mobilebreak {
+				display: inherit;
+			}
+			
+			#yammerlogo {
+				vertical-align: -12px;
+				width: 30px;
+			}
+			
+			#maillogo {
+				vertical-align: -7px;
+				width: 20px;
+			}
+			.icons {
+				display:block ;
+				margin:auto;
+				width: 90px;
+				margin-top: 15px;
+				margin-bottom: 5px;
+			}
+			
+			#lifeeventbttn {
+				background-color:#BE9F71;
+				color: white;
+				font-weight: bold;
+				border-radius: 10px;
+				padding: 12px 10px 12px 10px;
+				font-size: 2.5vw!important;
+				margin-bottom: 20px;
+				width:50%;
+			}
+			
+			#topsection {
+				width: 90%;
+				margin:auto;
+				text-align: center;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			
+			#contact {
+				padding-top:10px;
+				padding-bottom: 10px;
+			}
+			
+			#divider {
+				background-color:#EEF0F2;
+				padding-bottom: 10px;
+				margin:auto;
+				text-align: center;
+			}
+			
+			#bottomsection {
+				background-color:#0c2340;
+				padding-top: 20px;
+				padding-bottom: 50px;
+				margin:auto;
+				text-align: center;
+				}
+}
+	
+				
+</style>
+</head>
+<body>
+<main>
+
+<div id="hkbanner">
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/hklifeeventsbanner.png" alt="hkbanner" style="padding: 0; margin: 0; width: 100%;">
+</div>
+
+<div>
+	<button id="language" onclick="location.href =''">中文</button>
+</div>
+
+<div id="topsection">
+	
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/Logo.png" id="benefitslogo" alt="benefitslogo">
+
+<h2>Mainland China Benefits - Life Events</h2>
+<p>Life can be crazy sometimes!</p>
+<p> At Ralph Lauren, we're committed in supporting you through the various stages of your personal life.</p>
+<p>This page is designed to help you navigate the various adminstrative requirements when your personal circumstances change.</p>
+<p>Your P&D Business Partner is available for any additional help you may need.</p>
+
+<div id="contact">
+
+<img id="yammerlogo" src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/yammer.png" style="display: inline-block;" alt="yammer">
+<a href="" class="contacttext">Follow us on Yammer</a>
+
+<br id="mobilebreak">
+
+<img id="maillogo" src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/mail.png" style="display: inline-block;" " alt="mail">
+<a href="mailto:CandB@RalphLauren.com" class="contacttext">Contact the HK Benefits Team</a>
+
+</div>
+</div>
+
+<div id="divider">
+
+<h3 style="color: #0C2340; padding-top: 40px;">SELECT A LIFE EVENT</h3>
+
+<h4 style="color: #0C2340;">OR</h4>
+
+<button type="button" id="lifeeventbttn" onclick="location.href='https://rltoday.ralphlauren.com/career/Benefits/Pages/APAC/APACBenefitsHK.aspx'">Browse By Topic</button>
+
+</div>
+
+<div id="bottomsection">
+	
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/marriage.png" alt="marriage" class="icons">
+
+<button type="button" class="collapsible">Marriage</button>
+<div class="content">
+	<button type="button" class="collapsible2">Can I take the leave before the marriage date? </button>
+	<div class="content2">
+			<p>Full-time employees are legally entitled to statutory marriage leave upon marriage in accordance with the law. Marriage leave can only be taken once during an employee’s employment with Ralph Lauren.<br>The marriage leave must be taken within 1 year of the official marriage registration date and the application must be supported by a copy of the marriage certificate.</p>
+	</div>
+	<button type="button" class="collapsible2">What documents must I provide if I got married in another country?</button>
+	<div class="content2">
+			<p>Within 3 months (i.e. 90 days) from marriage date, you have to update marital status<i> (Personal -> Personal Information -> Edit)</i> and dependent’s information <i>(Actions -> View Dependents -> Add)</i> in Workday.<br>  Please also provide a copy of the foreign legal documents and the dependent’s passport for verification.</p>
+	</div>
+	<button type="button" class="collapsible2">Will I be entitled for any other marriage benefits? </button>
+	<div class="content2">
+			<p>A marriage gift of CNY 500 for an employee’s first legal marriage during an employee’s employment with Ralph Lauren</p>
+	</div>
+	<button type="button" class="collapsible2"> How can I enroll and enjoy the benefits?</button>
+	<div class="content2">
+			<p>Please contact with your HR Partner and C&B, please also update the dependent’s information in Workday.</p>
+	</div>
+			
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/Divorce.png" alt="divorce" class="icons">
+
+<button type="button" class="collapsible">Getting divorced / Legal separation</button>
+<div class="content">
+	<button type="button" class="collapsible2">Which information need to update in Workday system?</button>
+	<div class="content2">
+		<p>You have to update marital status, beneficiary, emergency contacts and dependent information in Workday.</p>
+		<p>Marital Status: <i> Personal -> Personal Information -> Edit</i></p>
+		<p>Emergency Contacts:<i> Personal -> Emergency Contacts -> Edit</i></p>
+		<p>Dependent Information:<i> Actions -> View Dependents -> Edit</i></p>
+		
+	</div>
+	
+</div>	
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/baby.png" alt="baby" class="icons">
+
+<button type="button" class="collapsible">Newborn</button>
+<div class="content">
+	<button type="button" class="collapsible2">Can I apply for family leave (formerly parental leave) in addition to paternity leave?</button>
+	<div class="content2">
+	<p>All full-time permanent male employees after 1 year of service with the Company, excluding those who are serving their notice period, are entitled to 20 days of Family Leave (including paternity leave) on full pay for each confinement of his spouse.  Eligible employees must inform their manager in advance of their intention of taking Family Leave.<br> A copy of birth certificate or any official documents showing the relationship between employee and the child should be submitted to the People and Development Department.  The Family Leave can be taken consecutively or as a block of at least 5 work days each time and must be taken within 1 year of the child’s birth or adoption. <br> Any untaken day(s) will be forfeited after the 1 year period.  The Family Leave is subject to the Company’s absolute discretion. It cannot be cashed out under any circumstances.</p>
+	</div>
+	
+	<button type="button" class="collapsible2">Maternity & Paternity Leave</button>
+	<div class="content2">
+	<p><b>Maternity leave</b></p>
+	<p>All full-time female employees are entitled to Maternity Leave for 98 calendar days, starting 15 days before the expected date of confinement, subject to local statutory requirements. <br> For the purposes of work safety and protection under the relevant laws, female employees are required to submit a medical certificate of pregnancy issued by a registered medical practitioner within 12 weeks of pregnancy, and birth certificate & discharge summary within one month after the birth of the child.</p>
+		<br>
+	<p><b>Paternity leave</b></p>
+	<p>All full-time male employees are entitled Statutory Paternity Leave on full pay for each confinement of his spouse, which should can be taken consecutively during the period:</p>
+	<p>- The Paternity Leave should be taken consecutively within 3 months of the child’s birth. Any untaken day(s) will be forfeited after that and cannot be cashed out or carried over under any circumstances.</p>
+	<p>- Eligible employees shall inform the line manager and People and Development Department when applying for Paternity Leave at least one month in advance. A copy of birth certificate should be submitted within one month after the birth of the child.</p>
+	</div>
+	
+	<button type="button" class="collapsible2">Will I be entitled for any other newborn benefits?</button>
+	<div class="content2">
+	<p>A birth gift of RL products will be offered for an employee’s newborn baby.</p>
+	</div>
+
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/adoption.png" alt="adoption" class="icons">
+
+<button type="button" class="collapsible">Adoption</button>
+<div class="content">
+	
+	<button type="button" class="collapsible2">When should I take my family leave?</button>
+	<div class="content2">
+	<p>In the case of adoption, full-time permanent employees after 1 year of service with the Company, excluding those who are serving their notice period, are entitled to 20 days of Family Leave on full pay per adoption. <br> A copy of birth certificate or any official documents showing the relationship between employee and the child should be submitted to the People and Development Department. The Family Leave can be taken consecutively or as a block of at least 5 work-days each time and has to be taken within 1 year of the adoption. Any untaken day(s) will be forfeited after the 1-year period. </p>
+	</div>
+	
+	<button type="button" class="collapsible2">Will I be entitled for any other adoption benefits?</button>
+	<div class="content2">
+	<p>The Adoption Assistance is provided for qualifying adoption expenses up to USD10,000 per adoption with a limit of USD20,000 per employee during employment period.  Once placement is finalized, please complete the Adoption Assistance Program Reimbursement Request Form and send to country Payroll team together with supporting documents.You can find more information<a href="https://rltoday.ralphlauren.com/career/Benefits/Documents/APAC/Hong%20Kong/Global%20Policy%20 -%20Adoption%20Assistance.pdf" target="_blank" rel="noopener noreferrer"> here</a></p>.
+	</div>
+	
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/paperwork.png" alt="paperwork" class="icons">
+
+<button type="button" class="collapsible">Updating Personal Information</button>
+<div class="content">
+	
+	<button type="button" class="collapsible2">Changing My Legal Name</button>
+	<div class="content2">
+	<p>You must update the record in Workday with supporting documents as below.</p>
+	<p><b>In Workday:</b><i> Contact > Edit</i></p>
+	</div>
+	
+	<button type="button" class="collapsible2">Changing My Emergency Contact</button>
+	<div class="content2">
+	<p>Please update your emergency contacts in Workday under <i><b>Personal > Emergency Contacts > Edit.</b></i></p>
+	</div>
+
+	<button type="button" class="collapsible2">Changing My Bank Details</button>
+	<div class="content2">
+	<p>Please update your new bank account information in Workday under <i><b>Pay > Actions > Payment Elections > Edit/Remove.</b></i></p>
+	</div>
+	
+	<button type="button" class="collapsible2">Changing My Address</button>
+	<div class="content2">
+	<p>Please update the new address in Workday as below.</p>
+	<p><b>Workday:</b><i> Contact > Edit</i></p>
+	</div>
+		
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/sickdeath.png" alt="illness" class="icons">
+
+<button type="button" class="collapsible">Illness or death of a relative</button>
+<div class="content">
+	
+	<h5>- Serious Illness of Immediate Family -</h5>
+	
+  <button type="button" class="collapsible2">When can I take the Family Leave?</button>
+	<div class="content2">
+	<p>All full-time permanent employees after 1 year of service with the Company, excluding those who are serving their notice period, are entitled to 20 days of family leave on full pay for taking care an immediate family member (spouse, child, parent or parent-in-law) who has a serious illness.<br>  The Family Leave can be taken consecutively or intermittently and can only be granted once in a 1-year look-back period. <br> In situations for the caring of an immediate family member, employees will need to provide the relevant medical certification to support the need for taking the leave.  The certification shall include information on the date of commencement of the serious health condition, the probable duration of the condition, the necessary duration of the leave, the estimated amount of time the health care provider believes care will be needed, a confirmation that the serious health condition warrants the employee’s participation. <br> Eligible employees must inform their manager in advance of their intention of taking family leave.  The Family Leave is subject to the Company’s absolute discretion. It cannot be cashed out under any circumstances.  For details, please contact the People and Development Department.</p>
+	</div>
+	
+	<h5>- Death or Hospitalization of Family Members -</h5>
+	
+	<button type="button" class="collapsible2">Can I take the leave for the death of family member?</button>
+	<div class="content2">
+		<p>Full-time employees are legally entitled to 3 days' full paid funeral leave for the death of immediate family. In terms of " immediate family ", our company refers to parents, spouses, children, parents in law (in laws), brothers, sisters and grandparents.<br> Employees should take funeral leave within 1 month after the death of immediate family. Any untaken day(s) will be forfeited after that and cannot be cashed out or carried over under any circumstances</p>
+	</div>
+	
+	<button type="button" class="collapsible2">Will I be entitled for any other benefits?</button>
+	<div class="content2">
+	<p>At Business/ Department manager’s discretion, a condolence wreath of CNY 300 and token of CNY 300 may be sent in the event of the death of an employee’s family member. <br> The supervisor/ manager of the employee concerned may initiate the arrangements (flowers or fruit basket or wreath) for such occasions. Reimbursement will be arranged by the Finance Department.</p>
+	</div>
+	
+	<button type="button" class="collapsible2">What information needs to be updated in the system?</button>
+	<div class="content2">
+	<p>You may need to update marital status, beneficiary, emergency contacts and dependent information in Workday. </p>
+	<p>Martial Status:<i> Personal > Personal Information > Edit</i></p>
+	<p>Emergency Contacts:<i> Personal > Emergency Contacts > Edit</i></p>
+	<p>Beneficiary & Dependent Information:<i> Actions > View Dependents > Edit</i></p>
+	<p>Dependent Information:<i></i> Actions -> View Dependents -> Edit</i></p>
+	</div>
+	
+	<button type="button" class="collapsible2">Will the company arrange consolation products for the hospitalization of immediate family?</button>
+	<div class="content2">
+	<p>At Business/ Department manager’s discretion, a bouquet of flowers or fruit basket of CNY 200 if an employee or their spouse or children is hospitalized.<br> The supervisor/ manager of the employee concerned may initiate the arrangements (flowers or fruit basket) for such occasions. Reimbursement will be arranged by the Finance Department.</p>
+	
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/financialaid.png" alt="financialaid" class="icons">
+
+<button type="button" class="collapsible">Financial Assistance</button>
+<div class="content">
+  <p>The Ralph Lauren Employee Relief Fund is a global assistance program for employees, funded by employees with support from the Company and the Ralph Lauren Corporate Foundation.<br> It allows eligible employees under financial stress due to significant personal hardship or natural disaster to apply for grants and get assistance when needed. <br>You can find more information about the Ralph Lauren Relief Fund <a href="https://rltoday.ralphlauren.com/Pages/2018_07_July/0627_Corporate_EmergencyReliefFund.aspx" target="_blank" rel="noopener noreferrer">here.</a></p>
+</div>
+
+</div>
+
+<script type="text/javascript">
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content2 = this.nextElementSibling;
+    if (content2.style.display === "block") {
+      content2.style.display = "none";
+    } else {
+      content2.style.display = "block";
+    }
+  });
+}
+</script>
+
+</main>
+
+</body>
+</html>
+

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"> 
+<style>
+
+main {
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+	color: #3B3838!important;
+	font-size: 1.2vw!important;
+	line-height: 150%!important;
+}
+
+h2{
+	font-size: 1.4vw!important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+	margin:none;
+	font-weight:bold!important;
+}
+
+h3{
+	font-size: 1.3vw!important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+	margin:none;
+    font-weight:600!important;
+}
+
+h4 {
+	font-size: 1.2vw!important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    margin-bottom:20px!important;
+}
+
+h5 {
+	font-size: 1.2vw!important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    margin-top:20px!important;
+    margin-bottom:20px!important;
+    font-weight: 500!important;
+}
+
+a:not(.contacttext) {
+	color:#377fd9!important;
+	font-weight:500!important;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#6A706E;
+	font-weight:700!important;
+	text-decoration: none;
+}
+
+a:active {
+	color:#3B3838;
+	font-weight:700!important;
+	text-decoration: none;
+}
+
+.collapsible {
+  background-color: #C4C4C4;
+  color: #0C2340;
+  padding: 10px;
+  width: 40%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1vw!important;
+}
+
+.collapsible2 {
+  background-color: #eaeaea;
+  color: #0C2340;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1vw!important;
+}
+
+.active, .collapsible, .collapsible2:hover {
+  background-color: #C4C4C4;
+  color:#0c2340;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible2:after {
+  content: '\002B';
+  color: #0c2340;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding-top: 20px!important;
+  padding-bottom: 20px!important;
+  padding-left: 20px!important;
+  padding-right:20px!important; 
+  width: 70%;
+  overflow: hidden;
+  background-color: #eaeaea;
+  margin:auto;
+  border-radius: 10px;
+  display:none;
+}
+
+.content2 {
+  padding-top: 20px!important;
+  padding-bottom: 20px!important;
+  padding-left: 20px!important;
+  padding-right:20px!important; 
+  width: 90%;
+  overflow: hidden;
+  background-color: #eaeaea;
+  margin:auto;
+  border-radius: 10px;
+  display:none;
+}
+
+.contacttext {
+	font-size: 0.7vw!important;
+	margin-right: 30px;
+	font-weight:600!important;
+	text-decoration: none;
+	display: inline-block!important;
+	color:#377fd9!important;
+}
+
+#benefitslogo {
+	width: 40%;
+	margin-bottom: 20px;
+	
+}
+
+#language {
+	margin-top:0px;
+	margin-bottom: 100px;
+	margin-right:40px;
+	padding: 10px;
+	background-color:#0c2340;
+	border-radius: 0px;
+	color: white;
+	border: none;
+	float:right;
+	font-style: bold;
+}
+
+#mobilebreak {
+				display: none;
+			}
+
+#yammerlogo {
+	vertical-align: -19px;
+	width: 50px;
+}
+
+#maillogo {
+	vertical-align: -10px;
+	width: 30px;
+}
+.icons {
+	display:block ;
+	margin:auto;
+	width: 80px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+#lifeeventbttn {
+	background-color:#BE9F71;
+	color: white;
+	font-weight: 600;
+	border-radius: 10px;
+	padding: 12px 10px 12px 10px;
+	font-size: 1vw!important;
+	margin-bottom: 20px;
+	width:30%;
+	border: none;
+	outline: none;
+}
+
+#topsection {
+	width: 70%;
+	margin:auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#contact {
+	padding-top:20px;
+	padding-bottom: 10px;
+}
+
+#divider {
+	background-color:#EEF0F2;
+	padding-bottom: 10px;
+}
+
+#bottomsection {
+	background-color:#0c2340;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  			main {
+				text-align: center;
+				font-family: Verdana, Geneva, Tahoma, sans-serif!important;
+				color: #3B3838;
+				font-size: 2.7vw!important;
+				line-height: 150%!important;
+			}
+			p{
+				line-height: 150%!important;
+				font-size: 2.7vw!important;
+
+			}
+
+			b{
+				font-weight:700!important;
+				font-size:2.7vw!important;
+			}
+
+			
+			h2{
+				font-size: 3.5vw!important;
+				font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+				margin:none;
+				font-weight:bold!important;
+				line-height: 150%!important;
+            }
+			
+			h3{
+				font-size: 3vw!important;
+				font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+				margin:none;
+				font-weight:600!important;
+			}
+
+			h4 {
+				font-size: 2.8vw!important;
+				font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+				margin-bottom:20px!important;
+			}
+
+			h5 {
+				font-size: 3vw!important;
+				font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+				margin-top:15px!important;
+				margin-bottom:15px!important;
+				font-weight:700!important;
+			}
+
+			
+			a: not(.contacttext) {
+				color:#377fd9!important;
+				font-weight:600!important;
+				text-decoration: none;
+				margin-top:2px!important;
+				margin-bottom:2px!important;
+			}
+			
+			a:hover {
+				color:#6A706E!important;
+				font-weight:700!important;
+				text-decoration: none;
+			}
+			
+			a:active {
+				color:#3B3838!important;
+				font-weight:700!important;
+				text-decoration: none;
+			}
+			
+			.collapsible {
+			  background-color: #C4C4C4;
+			  color: #0C2340;
+			  padding: 10px;
+			  width: 60%;
+			  border-radius: 10px;
+			  border: none;
+			  outline: none;
+			  font-size: 3.6vw!important;
+			  margin:auto;
+			  margin-top: 10px;
+			  margin-bottom: 10px;
+			  font-weight: 700!important;
+			}
+			
+			.collapsible2 {
+			  background-color: #eaeaea;
+			  color: #0C2340;
+			  padding: 10px;
+			  width: 80%;
+			  border-radius: 10px;
+			  border: none;
+			  outline: none;
+			  font-size: 3.2vw!important;
+			  margin:auto;
+			  margin-top: 10px;
+			  margin-bottom: 20px;
+			  font-weight: 700!important;
+			}
+			
+			.active, .collapsible, .collapsible2:hover {
+			  background-color: #C4C4C4;
+			  color:#0c2340;
+			}
+			
+			.collapsible:after {
+			  content: '\002B';
+			  color: white;
+			  font-weight: bold;
+			  float: right;
+			  margin-left: 5px;
+			}
+			
+			.collapsible2:after {
+			  content: '\002B';
+			  color: #0c2340;
+			  font-weight: bold;
+			  margin-left: 5px;
+			}
+			
+			.active:after {
+			  content: "\2212";
+			}
+			
+			.content {
+			  padding: 0 20px;
+			  width: 90%!important;
+			  overflow: hidden;
+			  background-color: #eaeaea;
+			  margin:auto;
+			  border-radius: 10px;
+			  display:none;
+			}
+			
+			.content2 {
+			  padding: 0 20px;
+			  width: 90%!important;
+			  overflow: hidden;
+			  background-color: #eaeaea;
+			  margin:auto;
+			  border-radius: 10px;
+			  display:none;
+			}
+			
+			.contacttext {
+				font-size: 2vw!important;
+				margin-right: 20px;
+				font-weight:500!important;
+				display: inline-block!important;
+				color:#377fd9!important;
+				text-decoration: none;
+			}
+			
+			
+			#benefitslogo {
+			width: 40%;
+			margin-bottom: 20px;
+	
+			}
+			
+			#mobilebreak {
+				display: inherit;
+			}
+			
+			#yammerlogo {
+				vertical-align: -12px;
+				width: 30px;
+			}
+			
+			#maillogo {
+				vertical-align: -7px;
+				width: 20px;
+			}
+			.icons {
+				display:block ;
+				margin:auto;
+				width: 90px;
+				margin-top: 15px;
+				margin-bottom: 5px;
+			}
+			
+			#lifeeventbttn {
+				background-color:#BE9F71;
+				color: white;
+				font-weight: bold;
+				border-radius: 10px;
+				padding: 12px 10px 12px 10px;
+				font-size: 2.5vw!important;
+				margin-bottom: 20px;
+				width:50%;
+			}
+			
+			#topsection {
+				width: 90%;
+				margin:auto;
+				text-align: center;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			
+			#contact {
+				padding-top:10px;
+				padding-bottom: 10px;
+			}
+			
+			#divider {
+				background-color:#EEF0F2;
+				padding-bottom: 10px;
+				margin:auto;
+				text-align: center;
+			}
+			
+			#bottomsection {
+				background-color:#0c2340;
+				padding-top: 20px;
+				padding-bottom: 50px;
+				margin:auto;
+				text-align: center;
+				}
+}
+	
+				
+</style>
+</head>
+<body>
+<main>
+
+<div id="hkbanner">
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/hklifeeventsbanner.png" alt="hkbanner" style="padding: 0; margin: 0; width: 100%;">
+</div>
+
+<div>
+	<button id="language" onclick="location.href =''">ENG</button>
+</div>
+
+<div id="topsection">
+	
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/Logo.png" id="benefitslogo" alt="benefitslogo">
+
+<h2>中国区福利 - 人生大事</h2>
+<p>生活有时是疯狂的!</p>
+<p>在Ralph Lauren，我们致力于支持您度过个人生活的各个阶段。</p>
+<p>本页面旨在帮助您在个人情况发生变化时，了解各项行政管理要求及流程。</p>
+<p>您的P&D业务合作伙伴可以为您提供可能需要的任何额外帮助。</p>
+
+<div id="contact">
+
+<img id="yammerlogo" src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/yammer.png" style="display: inline-block;" alt="yammer">
+<a href="" class="contacttext">在Yammer上关注我们</a>
+
+<br id="mobilebreak">
+
+<img id="maillogo" src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/mail.png" style="display: inline-block;" " alt="mail">
+<a href="mailto:CandB@RalphLauren.com" class="contacttext">联系中国区薪酬福利团队</a>
+
+</div>
+</div>
+
+<div id="divider">
+
+<h3 style="color: #0C2340; padding-top: 40px;">选择人生大事</h3>
+
+<h4 style="color: #0C2340;">或</h4>
+
+<button type="button" id="lifeeventbttn" onclick="location.href='https://rltoday.ralphlauren.com/career/Benefits/Pages/APAC/APACBenefitsHK.aspx'">按照主题浏览</button>
+
+</div>
+
+<div id="bottomsection">
+	
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/marriage.png" alt="marriage" class="icons">
+
+<button type="button" class="collapsible">结婚</button>
+<div class="content">
+	<button type="button" class="collapsible2">我能在领取结婚证前休取假期吗？</button>
+	<div class="content2">
+			<p>全日制员工在受雇于公司期间因法定结婚（以有权政府部门出具的结婚证书所载时间为准），则有权依法享有法定的婚假（根据适用法律，目前为3个工作日，该期限将根据适用法律的调整而调整）。按照员工工作所在地的当地适用法规，员工可能还有权享有晚婚假（该权利将根据适用法律的调整而调整）。婚假在受雇于Ralph Lauren期间仅可休取一次。<br>婚假需在领取结婚证书的1年内申请及休取，申请时须提供结婚证复印件作为证明材料。</p>
+	</div>
+	<button type="button" class="collapsible2">如果我在国外结婚，我需要提供什么材料吗？</button>
+	<div class="content2">
+			<p>在结婚3个月（即：90天）内，您必须在Workday系统中更新您的婚姻状态（个人信息->更改）和被抚养人信息(操作 -> 查看被抚养人-> 添加)。同时，请提供国外法定有效证明及配偶护照复印件以供核查。</p>
+	</div>
+	<button type="button" class="collapsible2">我还享有其他结婚福利吗？</button>
+	<div class="content2">
+			<p>员工在受雇于Ralph Lauren期间首次法定结婚时，赠送价值500元的结婚礼金。</p>
+	</div>
+	<button type="button" class="collapsible2"> 如何才能领取结婚礼金呢？</button>
+	<div class="content2">
+			<p>请联系您的人力资源伙伴和薪酬福利部门，请同时在Workday系统中更新您的被扶养人信息。</p>
+	</div>
+			
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/Divorce.png" alt="divorce" class="icons">
+
+<button type="button" class="collapsible">合法分居/离婚</button>
+<div class="content">
+	<button type="button" class="collapsible2">Workday系统中需要更新什么信息吗？</button>
+	<div class="content2">
+		<p>您必须要在Workday系统中更新您的婚姻状态、紧急联系人和被扶养人信息。</p>
+		<p>婚姻状态：个人信息-> 编辑</p>
+		<p>紧急联系人：紧急联系人-> 编辑</p>
+		<p>被扶养人信息：操作 -> 查看被抚养人-> 编辑</p>
+		
+	</div>
+	
+</div>	
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/baby.png" alt="baby" class="icons">
+
+<button type="button" class="collapsible">新生儿</button>
+<div class="content">
+	<button type="button" class="collapsible2">除了陪产假外，我还能申请家庭假（曾经的育婴照顾假）吗？</button>
+	<div class="content2">
+	<p>除已提出离职通知者外，所有在公司服务满一年后的全职正式男员工其配偶生育子女且符合适用法律规定的，可享20天育婴照顾假（包含法定陪产假）。符合条件的员工必须提前告知直线经理休取育婴照顾假的计划。<br> 员工必须提供出生证复印件或任何证明您是父母的官方文件。育婴照顾假可以连续，或者间歇休取（每次至少休5个工作日），但必须于婴儿的出生日起1年内休毕，否则公司将视员工放弃有关的假期。</p>
+	</div>
+	
+	<button type="button" class="collapsible2">产假/陪产假</button>
+	<div class="content2">
+	<p><b>产假</b></p>
+	<p>所有全职女员工根据当地适用相关法律规定享受98天产假，其中可安排产前休息15天，产后休息83天；产假和延长生育假（如有）应该一并连续休取。 <br> 女员工一旦确认怀孕，应当尽快通知其直接主管和人才发展部，并提交由医院出具的确认其怀孕并说明预产期的有效证明和其他相关文件；如预产期有任何变化，如流产、难产等，亦应当尽早通知公司。并应在子女出生后一个月内提交出生证明和出院小结。</p>
+		<br>
+	<p><b>陪产假</b></p>
+	<p>符合适用法律规定的男性员工，按照其工作所在地的当地适用法规有权享受陪产假。陪产假的规定按照员工工作所在地的当地适用法规执行。</p>
+	<p>- 员工应当在子女出生后3个月内休完陪产假，并应该连续休取。逾期未休的陪产假视为员工自动放弃，不能结转和/或兑付现金。</p>
+	<p>- 如需休陪产假，员工应当于休假前至少提前一个月向直接主管和人才发展部提交书面申请（内容包括但不限于配偶的年龄和子女的（预期）出生日期），并应在子女出生后一个月内提交出生证明。</p>
+	</div>
+	
+	<button type="button" class="collapsible2">我还享有其他新生儿福利吗？</button>
+	<div class="content2">
+	<p>员工的新生儿出生时，公司会赠送一份诞生礼物。</p>
+	</div>
+
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/adoption.png" alt="adoption" class="icons">
+
+<button type="button" class="collapsible">领养</button>
+<div class="content">
+	
+	<button type="button" class="collapsible2">何时我能申请家庭假？</button>
+	<div class="content2">
+	<p>就收养的情形，所有全职员工在公司受雇时间满一年后（除已提出离职通知者外），每次收养可享20天有薪育婴照顾假。 <br> 员工必须提供出生证复印件或任何证明您是父母的官方文件。育婴照顾假可以连续，或者间歇休取（每次至少休5个工作日），但必须于婴儿的收养日起1年内休毕，否则公司将视员工放弃有关的假期。 </p>
+	</div>
+	
+	<button type="button" class="collapsible2">我还享有其他领养福利吗？</button>
+	<div class="content2">
+	<p>公司提供领养补助给符合条件的领养，每次领养费用不超过10000美元，雇佣期间每位员工的领养总费用不超过20000美元。领养完成后，请填写领养补助计划报销申请表，并连同证明文件一起发送给薪酬福利部门。-<a href="https://rltoday.ralphlauren.com/career/Benefits/Documents/APAC/Hong%20Kong/Global%20Policy%20 -%20Adoption%20Assistance.pdf" target="_blank" rel="noopener noreferrer"> 详情请参阅RL Today网站:</a></p>.
+	</div>
+	
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/paperwork.png" alt="paperwork" class="icons">
+
+<button type="button" class="collapsible">-变更您的个人信息</button>
+<div class="content">
+	
+	<button type="button" class="collapsible2">变更姓名</button>
+	<div class="content2">
+	<p>您必须在Workday以下处更新记录，并提供以下证明文件。</p>
+	<p>个人信息-> 法定姓名-> 编辑</p>
+	</div>
+	
+	<button type="button" class="collapsible2">变更紧急联系人</button>
+	<div class="content2">
+	<p>您需要在Workday系统中更新信息。</p>
+	<p>个人信息-> 紧急联系人-> 编辑</p>
+	</div>
+
+	<button type="button" class="collapsible2">变更银行卡</button>
+	<div class="content2">
+	<p>请在Workday系统中更新新的银行卡信息。</p>
+	<p>薪资-> 付款方式-> 编辑或移除</p>
+	</div>
+	
+	<button type="button" class="collapsible2">变更地址</button>
+	<div class="content2">
+	<p>请在Workday系统中更新新的地址信息。</p>
+	<p>个人信息-> 联系信息-> 编辑</p>
+	</div>
+		
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/sickdeath.png" alt="illness" class="icons">
+
+<button type="button" class="collapsible">Illness or death of a relative</button>
+<div class="content">
+	
+	<h5>- 患有严重疾病的直系亲属 -</h5>
+	
+  <button type="button" class="collapsible2">何时我能申请家庭假？</button>
+	<div class="content2">
+	<p>除已提出离职通知者外，所有全日制员工在公司受雇时间达到12个月后，如有需要照顾患有严重疾病的直系亲属（配偶、子女、父母或岳父母），可以向公司申请最多20个工作日的假期。 <br> 就此家庭假而言，“严重健康状况”通常指疾病、伤害、损害，身体或精神状况，需要持续护理两周或更长时间，包括：医院、收容所或住宅医疗机构中的住院病人护理；或因无法参加学校或日常活动而在健康护理中心持续接受保健治疗。以上情况并不涵盖仅需短期治疗便可复原的病症，和仅持续数天的轻微病症，以及通常不涉及住院并且只需要短暂恢复期的外科手术。<br> 员工必须提供相关的医疗证明来支持休假的需要。该证明文件应包括严重健康状况的开始日期、病情可能持续的时间、必要的休假天数、医护人员预估需要护理的天数、证明严重健康状况需要员工照顾等信息。<br> 此情况下的家庭假可以连续或间歇地休毕，并且只能在1年的回顾期内获批一次。<br> 符合家庭假条件的员工必须提前告知其直线经理他们的休假计划。直线经理有权根据业务情况来决定是否批准休假计划。<br> 家庭假是是一种公司给于员工的酌情福利，而不是法定/合同权利。有关家庭假的详细信息，请联系人才发展部。</p>
+	</div>
+	
+	<h5>- 家庭成员离世或住院 -</h5>
+	
+	<button type="button" class="collapsible2">家庭成员去世时我能休假吗？</button>
+	<div class="content2">
+		<p>员工的近亲死亡的，可以申请法定的全薪丧假（根据适用法律，目前为3天，该期限将根据适用法律的调整而调整）。 “近亲”系指父母亲，配偶，子女，岳父母（公婆），兄弟，姐妹以及（外）祖父母。<br> 员工应当在近亲属死亡后一个月内休完丧假，逾期未休的丧假视为员工自动放弃，不能结转和/或兑付现金。</p>
+	</div>
+	
+	<button type="button" class="collapsible2">我还享有其他福利吗？</button>
+	<div class="content2">
+	<p>如果员工的亲属亡故，业务/部门经理可自行决定，给予300元的悼念花圈或慰问品。 <br> 相关员工的主管/经理可主动安排此类活动（鲜花或果篮或花圈），向财务部申请报销事宜。</p>
+	</div>
+	
+	<button type="button" class="collapsible2">系统中需要更新什么信息吗？</button>
+	<div class="content2">
+	<p>您可能需要在Workday系统中更新您的婚姻状态、紧急联系人和家属信息。 </p>
+	<p>婚姻状态：个人信息-> 编辑</p>
+	<p>紧急联系人：紧急联系人-> 编辑</p>
+	<p>家属信息：Actions -> 查看被抚养人-> 编辑</p>
+	</div>
+	
+	<button type="button" class="collapsible2">家庭成员住院时,公司会给予慰问品吗？</button>
+	<div class="content2">
+	<p>如果员工或其配偶、子女住院时，业务/部门经理可自行决定，公司给予200元的鲜花或果篮。<br>相关员工的主管/经理可主动安排此类活动（鲜花或果篮），向财务部申请报销事宜。.</p>
+	
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/financialaid.png" alt="financialaid" class="icons">
+
+<button type="button" class="collapsible">紧急救济基金/财政补助</button>
+<div class="content">
+  <p>拉尔夫劳伦员工救济基金是一个全球员工援助计划，由员工资助，并获得公司和拉尔夫劳伦企业基金会支持。符合条件的Ralph Lauren员工在因个人困难或自然灾害而面临重大经济困难时，可以按需申请补助并获得援助。 <br><a href="https://rltoday.ralphlauren.com/Pages/2018_07_July/0627_Corporate_EmergencyReliefFund.aspx" target="_blank" rel="noopener noreferrer">有关更多信息，请参阅RL Today网站：</a></p>
+</div>
+
+</div>
+
+<script type="text/javascript">
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content2 = this.nextElementSibling;
+    if (content2.style.display === "block") {
+      content2.style.display = "none";
+    } else {
+      content2.style.display = "block";
+    }
+  });
+}
+</script>
+
+</main>
+
+</body>
+</html>
+
