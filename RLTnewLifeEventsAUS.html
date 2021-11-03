@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+main {
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+	color: #3B3838!important;
+	font-size: 1.2vw!important;
+	line-height: 150%!important;
+}
+
+h2{
+	font-size: 1.4vw!important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+	margin:none;
+	font-weight:bold!important;
+}
+
+h3{
+	font-size: 1.3vw!important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+	margin:none;
+    font-weight:600!important;
+}
+
+h4 {
+	font-size: 1.2vw!important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    margin-bottom:20px!important;
+}
+
+h5 {
+	font-size: 1.2vw!important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    margin-top:20px!important;
+    margin-bottom:20px!important;
+    font-weight: 500!important;
+}
+
+a:not(.contacttext) {
+	color:#377fd9!important;
+	font-size: 1vw!important;
+	font-weight:500!important;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#6A706E;
+	font-weight:700!important;
+	text-decoration: none;
+}
+
+a:active {
+	color:#3B3838;
+	font-weight:700!important;
+	text-decoration: none;
+}
+
+.collapsible {
+  background-color: #C4C4C4;
+  color: #0C2340;
+  padding: 10px;
+  width: 40%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1vw!important;
+}
+
+.collapsible2 {
+  background-color: #eaeaea;
+  color: #0C2340;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1vw!important;
+}
+
+.active, .collapsible, .collapsible2:hover {
+  background-color: #C4C4C4;
+  color:#0c2340;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible2:after {
+  content: '\002B';
+  color: #0c2340;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding-top: 20px!important;
+  padding-bottom: 20px!important;
+  padding-left: 20px!important;
+  padding-right:20px!important; 
+  width: 70%;
+  overflow: hidden;
+  background-color: #eaeaea;
+  margin:auto;
+  border-radius: 10px;
+  display:none;
+}
+
+.content2 {
+  padding-top: 20px!important;
+  padding-bottom: 20px!important;
+  padding-left: 20px!important;
+  padding-right:20px!important; 
+  width: 90%;
+  overflow: hidden;
+  background-color: #eaeaea;
+  margin:auto;
+  border-radius: 10px;
+  display:none;
+}
+
+.contacttext {
+	font-size: 0.7vw!important;
+	margin-right: 30px;
+	font-weight:600!important;
+	text-decoration: none;
+	display: inline-block!important;
+	color:#377fd9!important;
+}
+
+#benefitslogo {
+	width: 40%;
+	margin-bottom: 20px;
+	
+}
+
+#mobilebreak {
+				display: none;
+			}
+
+#yammerlogo {
+	vertical-align: -19px;
+	width: 50px;
+}
+
+#maillogo {
+	vertical-align: -10px;
+	width: 30px;
+}
+.icons {
+	display:block ;
+	margin:auto;
+	width: 80px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+#lifeeventbttn {
+	background-color:#BE9F71;
+	color: white;
+	font-weight: 600;
+	border-radius: 10px;
+	padding: 12px 10px 12px 10px;
+	font-size: 1vw!important;
+	margin-bottom: 20px;
+	width:30%;
+	border: none;
+	outline: none;
+}
+
+#topsection {
+	width: 70%;
+	margin:auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#contact {
+	padding-top:20px;
+	padding-bottom: 10px;
+}
+
+#divider {
+	background-color:#EEF0F2;
+	padding-bottom: 10px;
+}
+
+#bottomsection {
+	background-color:#0c2340;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  			main {
+				text-align: center;
+				font-family: Verdana, Geneva, Tahoma, sans-serif!important;
+				color: #3B3838;
+				font-size: 2.7vw!important;
+				line-height: 150%!important;
+			}
+			p{
+				line-height: 150%!important;
+				font-size: 2.7vw!important;
+
+			}
+
+			b{
+				font-weight:700!important;
+				font-size:2.7vw!important;
+			}
+
+			
+			h2{
+				font-size: 3.5vw!important;
+				font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+				margin:none;
+				font-weight:bold!important;
+				line-height: 150%!important;
+            }
+			
+			h3{
+				font-size: 3vw!important;
+				font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+				margin:none;
+				font-weight:600!important;
+			}
+
+			h4 {
+				font-size: 2.8vw!important;
+				font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+				margin-bottom:20px!important;
+			}
+
+			h5 {
+				font-size: 3vw!important;
+				font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+				margin-top:15px!important;
+				margin-bottom:15px!important;
+				font-weight:700!important;
+			}
+
+			
+			a: not(.contacttext) {
+				color:#377fd9!important;
+				font-size: 3vw!important;
+				font-weight:600!important;
+				text-decoration: none;
+				margin-top:2px!important;
+				margin-bottom:2px!important;
+
+			}
+			
+			a:hover {
+				color:#6A706E!important;
+				font-weight:700!important;
+				text-decoration: none;
+			}
+			
+			a:active {
+				color:#3B3838!important;
+				font-weight:700!important;
+				text-decoration: none;
+			}
+			
+			.collapsible {
+			  background-color: #C4C4C4;
+			  color: #0C2340;
+			  padding: 10px;
+			  width: 60%;
+			  border-radius: 10px;
+			  border: none;
+			  outline: none;
+			  font-size: 3.6vw!important;
+			  margin:auto;
+			  margin-top: 10px;
+			  margin-bottom: 10px;
+			  font-weight: 700!important;
+			}
+			
+			.collapsible2 {
+			  background-color: #eaeaea;
+			  color: #0C2340;
+			  padding: 10px;
+			  width: 80%;
+			  border-radius: 10px;
+			  border: none;
+			  outline: none;
+			  font-size: 3.2vw!important;
+			  margin:auto;
+			  margin-top: 10px;
+			  margin-bottom: 20px;
+			  font-weight: 700!important;
+			}
+			
+			.active, .collapsible, .collapsible2:hover {
+			  background-color: #C4C4C4;
+			  color:#0c2340;
+			}
+			
+			.collapsible:after {
+			  content: '\002B';
+			  color: white;
+			  font-weight: bold;
+			  float: right;
+			  margin-left: 5px;
+			}
+			
+			.collapsible2:after {
+			  content: '\002B';
+			  color: #0c2340;
+			  font-weight: bold;
+			  margin-left: 5px;
+			}
+			
+			.active:after {
+			  content: "\2212";
+			}
+			
+			.content {
+			  padding: 0 20px;
+			  width: 90%!important;
+			  overflow: hidden;
+			  background-color: #eaeaea;
+			  margin:auto;
+			  border-radius: 10px;
+			  display:none;
+			}
+			
+			.content2 {
+			  padding: 0 20px;
+			  width: 90%!important;
+			  overflow: hidden;
+			  background-color: #eaeaea;
+			  margin:auto;
+			  border-radius: 10px;
+			  display:none;
+			}
+			
+			.contacttext {
+				font-size: 2vw!important;
+				margin-right: 20px;
+				font-weight:500!important;
+				display: inline-block!important;
+				color:#377fd9!important;
+				text-decoration: none;
+			}
+			
+			
+			#benefitslogo {
+			width: 40%;
+			margin-bottom: 20px;
+	
+			}
+			
+			#mobilebreak {
+				display: inherit;
+			}
+			
+			#yammerlogo {
+				vertical-align: -12px;
+				width: 30px;
+			}
+			
+			#maillogo {
+				vertical-align: -7px;
+				width: 20px;
+			}
+			.icons {
+				display:block ;
+				margin:auto;
+				width: 90px;
+				margin-top: 15px;
+				margin-bottom: 5px;
+			}
+			
+			#lifeeventbttn {
+				background-color:#BE9F71;
+				color: white;
+				font-weight: bold;
+				border-radius: 10px;
+				padding: 12px 10px 12px 10px;
+				font-size: 2.5vw!important;
+				margin-bottom: 20px;
+				width:50%;
+			}
+			
+			#topsection {
+				width: 90%;
+				margin:auto;
+				text-align: center;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			
+			#contact {
+				padding-top:10px;
+				padding-bottom: 10px;
+			}
+			
+			#divider {
+				background-color:#EEF0F2;
+				padding-bottom: 10px;
+				margin:auto;
+				text-align: center;
+			}
+			
+			#bottomsection {
+				background-color:#0c2340;
+				padding-top: 20px;
+				padding-bottom: 50px;
+				margin:auto;
+				text-align: center;
+				}
+}
+	
+				
+</style>
+</head>
+<body>
+<main>
+
+<div id="ausbanner">
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/ausbannerlifeevents.png" alt="ausbanner" style="padding: 0; margin: 0; width: 100%;">
+</div>
+
+<div id="topsection">
+	
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/Logo.png" id="benefitslogo" alt="benefitslogo">
+
+<h2>Australia Benefits - Life Events</h2>
+<p>Life can be crazy sometimes!</p>
+<p> At Ralph Lauren, we're committed in supporting you through the various stages of your personal life.</p>
+<p>This page is designed to help you navigate the various adminstrative requirements when your personal circumstances change.</p>
+<p>Your P&D Business Partner is available for any additional help you may need.</p>
+
+<div id="contact">
+
+<img id="yammerlogo" src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/yammer.png" style="display: inline-block;" alt="yammer">
+<a href="" class="contacttext">Follow us on Yammer</a>
+
+<br id="mobilebreak">
+
+<img id="maillogo" src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/mail.png" style="display: inline-block;" " alt="mail">
+<a href="mailto:CandB@RalphLauren.com" class="contacttext">Contact the Benefits Team</a>
+
+</div>
+</div>
+
+<div id="divider">
+
+<h3 style="color: #0C2340; padding-top: 40px;">SELECT A LIFE EVENT</h3>
+
+<h4 style="color: #0C2340;">OR</h4>
+
+<button type="button" id="lifeeventbttn" onclick="location.href='https://rltoday.ralphlauren.com/career/Benefits/Pages/APAC/APACBenefitsHK.aspx'">Browse By Topic</button>
+
+</div>
+
+<div id="bottomsection">
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/baby.png" alt="baby" class="icons">
+
+<button type="button" class="collapsible">Newborn</button>
+<div class="content">
+	<button type="button" class="collapsible2">Am I eligible for the Ralph Lauren Paid Parental Leave?</button>
+	<div class="content2">
+	<p>In the event of child birth or adoption, Permanent Full-Time and Part-Time employees after 1 year of service with the Company are entitled to Ralph Lauren Paid Parental Leave, except those who are serving notice period.</p>
+	</div>
+	
+	<button type="button" class="collapsible2">What is the entitlement?</button>
+	<div class="content2">
+		<p>In addition to any statutory entitlements Ralph Lauren provides all new parents, who are Full-time or Part-time employees with 12 months continuous service, with 4 weeks paid parental leave. <br>For Primary Carers with a minimum of 2 years’ service this benefit is extended to 12 weeks paid parental leave.</p>
+	</div>
+	
+	<button type="button" class="collapsible2"> Do I have to submit any document proof?</button>
+	<div class="content2">
+	<p>Yes, we have a parental leave pack that outlines the requirements. Please contact the People and Development team for a copy</p>
+	</div>
+	
+	<button type="button" class="collapsible2">I have twins, will I get more leave days?</button>
+	<div class="content2">
+	<p>The entitlement is same for each pregnancy or adoption, not the number of children born or adopted.</p>
+	</div>
+	
+	<button type="button" class="collapsible2">What is the application procedure?</button>
+	<div class="content2">
+	<p>This depends on the type of leave you are requesting, and we have a parental leave pack that outlines the requirements.<br> Please contact the People and Development team for a copy, at least 12 weeks ahead of your planned leave.</p>
+	</div>
+	
+	<button type="button" class="collapsible2">Do I have to apply the 4 weeks Parental Leave in one go?</button>
+	<div class="content2">
+		<p>The intent of the parental leave is to allow block of time to bond with the child. <br>To balance business operation and flexibility, you may split it into several submissions with a block of at least 5 work days each. <br>The approval is subject to your supervisor’s discretion based on the business needs</p>
+	</div>
+	
+	<button type="button" class="collapsible2">Can it be carried forward if it's not used up within the first year of the baby's birth?</button>
+	<div class="content2">
+		<p>Paid Parental Leave has to be used within the first year of the baby’s birth. <br>Any untaken day(s) will be forfeited after the 1 year period.</p>
+	</div>
+	
+	<button type="button" class="collapsible2">Will outstanding days be cashed out if one leaves the Company?</button>
+	<div class="content2">
+		<p>Paid Parental Leave is discretionary in nature and it will not be cashed out in any circumstances.</p>
+	</div>
+
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/paperwork.png" alt="paperwork" class="icons">
+
+<button type="button" class="collapsible">Updating Personal Information</button>
+<div class="content">
+	
+	<button type="button" class="collapsible2">Do I need to inform the P&D team to update a change in name?</button>
+	<div class="content2">
+	<p>WNo, you do not need to notify People and Development team of the change in name. You can update your name by logging into workday, updating your details and providing a supporting document.</p>
+	<p><b>In Workday:</b><i>Contact > Edit</i></p>
+	</div>
+	
+	<button type="button" class="collapsible2"> Do I need to inform the P&D team to update a Emergency contact?</button>
+	<div class="content2">
+	<p>No, you do not need to notify People and Development team of change in emergency contact. You can update this by logging into workday and updating your emergency contacts.</p>
+	<p><b>In Workday: </b><i>Personal > Emergency Contacts > Edit.</i></p>
+	</div>
+
+	<button type="button" class="collapsible2">Do I need to inform Payroll Team to update the bank account directly?</button>
+	<div class="content2">
+	<p>First, please update the new bank account in Workday and also advise the Payroll Department of this change. You can contact Payroll via <a href="mailto:OceaniaPayroll@RalphLauren.com">OceaniaPayroll@RalphLauren.com</a></p>
+	<p><b>In Workday:</b><i>Pay > Actions > Payment Elections > Edit/Remove.</i></p>
+	</div>
+	
+	<button type="button" class="collapsible2"> Do I need to inform People and Development team to change my address?</button>
+	<div class="content2">
+	<p>No, you do not need to notify People and Development team of change in address. You can update this by logging into workday and updating your contact details.</p>
+	<p><b>In Workday:</b><i> Contact > Edit</i></p>
+	</div>
+	
+	<button type="button" class="collapsible2">Change of Visa Status: What do I need to provide for record?</button>
+	<div class="content2">
+	<p>Please inform your People and Development team when you have a change in Visa status and provide relevant vevo documents.</p>
+	</div>
+	
+	<button type="button" class="collapsible2">How can I change my tax withholding?</button>
+	<div class="content2">
+	<p>Please contact <a href="mailto:OceaniaPayroll@RalphLauren.com">OceaniaPayroll@RalphLauren.com</a>, as you will need to complete a new tax declaration form.</p>
+	</div>
+		
+</div>
+
+<img src="https://rltoday.ralphlauren.com/career/Benefits/PublishingImages/2021/APAC%20Benefits%20Imagages%202021/financialaid.png" alt="financialaid" class="icons">
+
+<button type="button" class="collapsible">Financial Assistance</button>
+<div class="content">
+	
+	<button type="button" class="collapsible2">Am I eligible to apply for the Emergency Relief fund/ Finance Assistance?</button>
+	<div class="content2">
+	<p>Any Full-time or part-time corporate and store employee of Ralph Lauren, as well as employees on less than a year’s approved leave of absence who are facing significant personal hardship or as a result of a natural disaster are entitled to apply for finance assistance</p>
+	</div>
+	
+	<button type="button" class="collapsible2">How can I apply for Emergency Relief fund?</button>
+	<div class="content2">
+	<p>You can apply <b><a href="http://ralphlaurenemployeerelief.com/">here.</a></b></p>
+</div>
+	
+	
+</div>
+  
+</div>
+
+</div>
+
+</div>
+
+<script type="text/javascript">
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content2 = this.nextElementSibling;
+    if (content2.style.display === "block") {
+      content2.style.display = "none";
+    } else {
+      content2.style.display = "block";
+    }
+  });
+}
+</script>
+
+</main>
+
+</body>
+</html>
+
